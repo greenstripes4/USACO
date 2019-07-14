@@ -1,12 +1,15 @@
 import java.io.*;
 import java.util.StringTokenizer;
 //O(1)
-//20 20 20
-//1 2 21
-//1 1 1
-//50 50 50
-//1 50 50
-//3 2 6
+//9 9
+//6 6
+//7 7
+//9 13
+//6 6
+//6 10000
+//10000 6
+//10000 10000
+
 
 public class Main{
     public static void main(String[] args)throws IOException{
@@ -15,15 +18,11 @@ public class Main{
         int cases = Integer.parseInt(f.readLine());
         for(int i = 0; i < cases; i++){
             StringTokenizer st = new StringTokenizer(f.readLine());
-            int h = Integer.parseInt(st.nextToken());
-            int w = Integer.parseInt(st.nextToken());
             int l = Integer.parseInt(st.nextToken());
-            if(h <= 20 && w <= 20 && l <= 20){
-                System.out.println("Case " + (i+1) + ": " + "good");
-            }
-            else{
-                System.out.println("Case " + (i+1) + ": " + "bad");
-            }
+            int w = Integer.parseInt(st.nextToken());
+            int num1 = (int) Math.ceil((l-2)/3.0);
+            int num2 = (int) Math.ceil((w-2)/3.0);
+            System.out.println(num1 * num2);
         }
     }
 }

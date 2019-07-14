@@ -1,6 +1,16 @@
 import java.io.*;
 import java.util.HashMap;
 import java.util.StringTokenizer;
+//O(1)
+//HELLO
+//HOLA
+//HALLO
+//BONJOUR
+//CIAO
+//ZDRAVSTVUJTE
+//PJSDKJFHIU
+//#
+
 
 public class Main{
     public static void main(String[] args)throws IOException{
@@ -13,11 +23,10 @@ public class Main{
         langs.put("BONJOUR", "FRENCH");
         langs.put("CIAO", "ITALIAN");
         langs.put("ZDRAVSTVUJTE", "RUSSIAN");
-        int casenum = 0;
+        int casenum = 1;
         while(!((input = f.readLine()).equals("#"))){
+            System.out.println("Case " + casenum + ": " + langs.containsKey(input) ? langs.get(input):"UNKNOWN");
             casenum++;
-            String add = langs.containsKey(input) ? langs.get(input):"UNKNOWN";
-            System.out.println("Case " + casenum + ": " + add);
         }
     }
 }

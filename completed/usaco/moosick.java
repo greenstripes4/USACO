@@ -26,10 +26,8 @@ public class Main {
         int[][] chords = new int[n-c+1][c];
         for(int k = 0; k < n-c+1; k++){
             int[] temp = new int[c];
-            int temp_ind = 0;
             for(int p = 0; p < c; p++){
                 temp[p] = notes[p+k];
-                temp_ind++;
             }
             chords[k] = temp;
         }

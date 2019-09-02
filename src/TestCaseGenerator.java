@@ -14,28 +14,37 @@ enum Field
 public class TestCaseGenerator {
     // Enable result file (only if you have a bruce force solution as the Main
     // class ready)
-    static boolean enableOutput = false;
+    static boolean enableOutput = true;
 
     // Target folder to store test cases
-    static String problem = "folding";
+    static String problem = "stacking";
     static int edgeCaseNumber = 10;
     static int randomCaseNumber = 10;
 
-    // First line config
+    // First line number config
     static boolean hasPrefixLine = true;
-    static Field[] prefixSchema = {Field.FollowCount, Field.HighLimit};
+    static boolean prefixIsNumber = true;
+    static Field[] prefixSchema = {Field.HighLimit, Field.FollowCount};
     static int prefixNumbers = 2;
     static boolean prefixIsSorted = false;
-    static long[][] prefixBoundaries = { { 1, 100 }, { 1, 10000 } };
+    static long[][] prefixBoundaries = { { 1, 1000000 }, { 1, 25000 } };
+    static int prefixStrs = 1;
+    static long[][] prefixStrlenBoundaries = { {1, 1000} };
+    static char[][] prefixCharsets = { { '1', '0' } };
 
-    // Following line config
-    static int numberPerLine = 1;
+    // Following line number config
+    static boolean hasFollowLine = true;
+    static boolean followIsNumber = true;
+    static int numberPerLine = 2;
     static int numberLines = 100;
-    static boolean numberIsSorted = false;
-    static long[][] numberBoundaries = { { 0, 10000 }};
+    static boolean numberIsSorted = true;
+    static long[][] numberBoundaries = { { 1, 10000 }, { 1, 10000 }};
+    static int strPerLine = 1;
+    static long[][] followStrlenBoundaries = { {1, 1000} };
+    static char[][] followCharsets = { { 'B', '.' } };
 
     // Edge cases
-    static String[] edges = { "Low", "Low+1", "High-1", "High" };
+    static String[] edges = { "Low", "Low+1", "High-1", "High", "Medium" };
 
     public static long getEdgeNumberInRange(long min, long max) {
         if(min == max) {
@@ -52,6 +61,8 @@ public class TestCaseGenerator {
             return max - 1;
         case 3:
             return max;
+        case 4:
+            return (min+max)/2;
         default:
             return max;
         }
@@ -109,35 +120,96 @@ public class TestCaseGenerator {
         }
     }
 
+    public static String GenerateEdgeStrLine(int number, long[][] boundaries, char[][] charsets, boolean isSorted) {
+        String[] result = new String[number];
+        for (int i = 0; i < number; i++) {
+            int strlen = (int)getEdgeNumberInRange(boundaries[i][0], boundaries[i][1]);
+            char[] str = new char[strlen];
+            Random r = new Random();
+            for (int j=0; j<strlen; j++) {
+                str[j] = charsets[i][r.nextInt(charsets[i].length)];
+            }
+            result[i] = new String(str);
+        }
+
+        String resultStr = "";
+        String delim = "";
+        for (String i : result) {
+            resultStr += delim + i;
+            delim = " ";
+        }
+        return resultStr;
+    }
+
+    public static String GenerateRandomStrLine(int number, long[][] boundaries, char[][] charsets, boolean isSorted) {
+        String[] result = new String[number];
+        for (int i = 0; i < number; i++) {
+            int strlen = (int)getRandomNumberInRange(boundaries[i][0], boundaries[i][1]);
+            char[] str = new char[strlen];
+            Random r = new Random();
+            for (int j=0; j<strlen; j++) {
+                str[j] = charsets[i][r.nextInt(charsets[i].length)];
+            }
+            result[i] = new String(str);
+        }
+
+        String resultStr = "";
+        String delim = "";
+        for (String i : result) {
+            resultStr += delim + i;
+            delim = " ";
+        }
+        return resultStr;
+    }
+
+    public static String GenerateStrLine(int number, long[][] boundaries, char[][] charsets, boolean isEdgeCase, boolean isSorted) {
+        if (isEdgeCase) {
+            return GenerateEdgeStrLine(number, boundaries, charsets, isSorted);
+        } else {
+            return GenerateRandomStrLine(number, boundaries, charsets, isSorted);
+        }
+    }
+
     public static void GenerateTestCase(String caseFile, boolean isEdgeCase) throws IOException {
         PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(caseFile)));
         int lines = numberLines;
         if (hasPrefixLine) {
-            String prefix = GenerateNumberLine(prefixNumbers, prefixBoundaries, isEdgeCase, prefixIsSorted);
-            String[] prefixFields = prefix.split(" ");
-            out.println(prefix);
-            // Update config based on prefix
-            for(int i=0; i<prefixNumbers; i++){
-                switch (prefixSchema[i]){
-                    case FollowCount:
-                        lines = Integer.parseInt(prefixFields[i]);
-                        break;
-                    case LowLimit:
-                        long lowLimit = Long.parseLong(prefix.split(" ")[i]);
-                        for(long[] numberBoundary : numberBoundaries) {
-                            numberBoundary[0] = lowLimit;
-                        }
-                        break;
-                    case HighLimit:
-                        long highLimit = Long.parseLong(prefix.split(" ")[i]);
-                        for(long[] numberBoundary : numberBoundaries) {
-                            numberBoundary[1] = highLimit;
-                        }
-                        break;
+            if(prefixIsNumber) {
+                String prefix = GenerateNumberLine(prefixNumbers, prefixBoundaries, isEdgeCase, prefixIsSorted);
+                String[] prefixFields = prefix.split(" ");
+                out.println(prefix);
+                // Update config based on prefix
+                for (int i = 0; i < prefixNumbers; i++) {
+                    switch (prefixSchema[i]) {
+                        case FollowCount:
+                            lines = Integer.parseInt(prefixFields[i]);
+                            break;
+                        case LowLimit:
+                            long lowLimit = Long.parseLong(prefix.split(" ")[i]);
+                            for (long[] numberBoundary : numberBoundaries) {
+                                numberBoundary[0] = lowLimit;
+                            }
+                            break;
+                        case HighLimit:
+                            long highLimit = Long.parseLong(prefix.split(" ")[i]);
+                            for (long[] numberBoundary : numberBoundaries) {
+                                numberBoundary[1] = highLimit;
+                            }
+                            break;
+                    }
                 }
+            } else { // Str prefix
+                String prefix = GenerateStrLine(prefixStrs, prefixStrlenBoundaries, prefixCharsets, isEdgeCase, prefixIsSorted);
+                out.println(prefix);
             }
-            for (int i = 0; i < lines; i++) {
-                out.println(GenerateNumberLine(numberPerLine, numberBoundaries, isEdgeCase, numberIsSorted));
+        }
+        if(hasFollowLine) {
+            if(followIsNumber) {
+                for (int i = 0; i < lines; i++) {
+                    out.println(GenerateNumberLine(numberPerLine, numberBoundaries, isEdgeCase, numberIsSorted));
+                }
+            }else { //follow is str
+                    out.println(GenerateStrLine(strPerLine, followStrlenBoundaries, followCharsets, isEdgeCase, numberIsSorted));
             }
         }
         out.close();

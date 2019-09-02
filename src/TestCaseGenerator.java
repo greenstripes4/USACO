@@ -6,33 +6,41 @@ import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.util.Random;
 
+enum Field
+{
+    General, FollowCount, LowLimit, HighLimit;
+}
+
 public class TestCaseGenerator {
     // Enable result file (only if you have a bruce force solution as the Main
     // class ready)
-    static boolean enableOutput = true;
+    static boolean enableOutput = false;
 
     // Target folder to store test cases
-    static String problem = "gifts";
+    static String problem = "folding";
     static int edgeCaseNumber = 10;
     static int randomCaseNumber = 10;
 
     // First line config
     static boolean hasPrefixLine = true;
-    static boolean firstNumberCount = true;
+    static Field[] prefixSchema = {Field.FollowCount, Field.HighLimit};
     static int prefixNumbers = 2;
     static boolean prefixIsSorted = false;
-    static long[][] prefixBoundaries = { { 1, 1000 }, { 1, 1000000000 } };
+    static long[][] prefixBoundaries = { { 1, 100 }, { 1, 10000 } };
 
     // Following line config
-    static int numberPerLine = 2;
+    static int numberPerLine = 1;
     static int numberLines = 100;
     static boolean numberIsSorted = false;
-    static long[][] numberBoundaries = { { 0, 1000000000 }, { 0, 1000000000 } };
+    static long[][] numberBoundaries = { { 0, 10000 }};
 
     // Edge cases
     static String[] edges = { "Low", "Low+1", "High-1", "High" };
 
     public static long getEdgeNumberInRange(long min, long max) {
+        if(min == max) {
+            return min;
+        }
         Random r = new Random();
         int edge = r.nextInt(edges.length);
         switch (edge) {
@@ -44,12 +52,13 @@ public class TestCaseGenerator {
             return max - 1;
         case 3:
             return max;
+        default:
+            return max;
         }
-        return min + (long) (Math.random() * (max + 1 - min));
     }
 
     public static long getRandomNumberInRange(long min, long max) {
-        return min + (long) (Math.random() * (max + 1 - min));
+        return min + (long) (Math.random() * (max - min));
     }
 
     public static String GenerateEdgeNumberLine(int number, long[][] boundaries, boolean isSorted) {
@@ -105,9 +114,27 @@ public class TestCaseGenerator {
         int lines = numberLines;
         if (hasPrefixLine) {
             String prefix = GenerateNumberLine(prefixNumbers, prefixBoundaries, isEdgeCase, prefixIsSorted);
+            String[] prefixFields = prefix.split(" ");
             out.println(prefix);
-            if (firstNumberCount) {
-                lines = Integer.parseInt(prefix.split(" ")[0]);
+            // Update config based on prefix
+            for(int i=0; i<prefixNumbers; i++){
+                switch (prefixSchema[i]){
+                    case FollowCount:
+                        lines = Integer.parseInt(prefixFields[i]);
+                        break;
+                    case LowLimit:
+                        long lowLimit = Long.parseLong(prefix.split(" ")[i]);
+                        for(long[] numberBoundary : numberBoundaries) {
+                            numberBoundary[0] = lowLimit;
+                        }
+                        break;
+                    case HighLimit:
+                        long highLimit = Long.parseLong(prefix.split(" ")[i]);
+                        for(long[] numberBoundary : numberBoundaries) {
+                            numberBoundary[1] = highLimit;
+                        }
+                        break;
+                }
             }
             for (int i = 0; i < lines; i++) {
                 out.println(GenerateNumberLine(numberPerLine, numberBoundaries, isEdgeCase, numberIsSorted));
@@ -139,6 +166,11 @@ public class TestCaseGenerator {
 
     public static void main(String[] args) throws IOException {
         int i = 1;
+        String targetDir = "ray-test\\" + problem + "\\";
+        File directory = new File(targetDir);
+        if (! directory.exists()){
+            directory.mkdirs();
+        }
         for (; i <= edgeCaseNumber; i++) {
             String input = "ray-test\\" + problem + "\\" + i + ".in";
             GenerateTestCase(input, true);

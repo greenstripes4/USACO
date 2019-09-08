@@ -7,11 +7,6 @@ import java.nio.file.Files;
 import java.util.Random;
 import java.util.HashMap;
 
-enum Field
-{
-    General, FollowCount, LowLimit, HighLimit, FollowLength, FollowGrid;
-}
-
 enum SchemaField
 {
     GeneralNumber,
@@ -20,11 +15,13 @@ enum SchemaField
     Section2NumberMax,
     Section2StrlenMin,
     Section2StrlenMax,
+    Section2NumGrid,
     Section3LineCount,
     Section3NumberMin,
     Section3NumberMax,
     Section3StrlenMin,
     Section3StrlenMax,
+    Section3NumGrid,
     GeneralStr,
 }
 
@@ -52,20 +49,18 @@ public class TestCaseGenerator {
     // Section Configs
     static HashMap<Key, Object>[] config = new HashMap[]{
             new HashMap<>() {{
-                put(Key.Schema, "%d %d");
+                put(Key.Schema, "%d");
                 put(Key.Field, new SchemaField[]{
-                        SchemaField.Section2NumberMax,
                         SchemaField.Section2LineCount
                 });
                 put(Key.Lines, 1);
                 put(Key.NumberBoundaries, new long[][]{
-                        {1, 1000000},
-                        {1, 25000}
+                        {2, 25}
                 });
                 put(Key.NumberIsSorted, false);
             }},
             new HashMap<>() {{
-                put(Key.Schema, "%d %d");
+                put(Key.Schema, "%d %s");
                 put(Key.Field, new SchemaField[]{
                         SchemaField.GeneralNumber,
                         SchemaField.GeneralNumber
@@ -212,6 +207,14 @@ public class TestCaseGenerator {
                 }
                 config[1].put(Key.StrlenBoundaries, sec2Boundaries4);
                 break;
+            case Section2NumGrid:
+                config[1].put(Key.Lines, (int)numArg);
+                String[] schema2 = new String[(int)numArg];
+                for(int i=0; i<numArg; i++){
+                    schema2[i]="%d";
+                }
+                config[1].put(Key.Schema, String.join(" ", schema2));
+                break;
             case Section3LineCount:
                 config[2].put(Key.Lines, (int)numArg);
                 break;
@@ -242,6 +245,14 @@ public class TestCaseGenerator {
                     boundary[1] = numArg;
                 }
                 config[2].put(Key.StrlenBoundaries, sec3Boundaries4);
+                break;
+            case Section3NumGrid:
+                config[2].put(Key.Lines, (int)numArg);
+                String[] schema3 = new String[(int)numArg];
+                for(int i=0; i<numArg; i++){
+                    schema3[i]="%d";
+                }
+                config[2].put(Key.Schema, String.join(" ", schema3));
                 break;
         }
     }

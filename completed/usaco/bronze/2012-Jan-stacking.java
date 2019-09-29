@@ -6,19 +6,33 @@ import java.util.*;
     static int edgeCaseNumber = 10;
     static int randomCaseNumber = 10;
 
-    // First line config
-    static boolean hasPrefixLine = true;
-    static Field[] prefixSchema = {Field.HighLimit, Field.FollowCount};
-    static int prefixNumbers = 2;
-    static boolean prefixIsSorted = false;
-    static long[][] prefixBoundaries = { { 1, 1000000 }, { 1, 25000 } };
-
-    // Following line config
-    static int numberPerLine = 2;
-    static int numberLines = 100;
-    static boolean numberIsSorted = true;
-    static long[][] numberBoundaries = { { 1, 10000 }, { 1, 10000 }};
-
+    static HashMap<Key, Object>[] config = new HashMap[]{
+            new HashMap<>() {{
+                put(Key.Schema, "%d %d");
+                put(Key.Field, new SchemaField[]{
+                        SchemaField.Section2NumberMax,
+                        SchemaField.Section2LineCount
+                });
+                put(Key.Lines, 1);
+                put(Key.NumberBoundaries, new long[][]{
+                        {1, 1000000},
+                        {1, 25000}
+                });
+                put(Key.NumberIsSorted, false);
+            }},
+            new HashMap<>() {{
+                put(Key.Schema, "%d %d");
+                put(Key.Field, new SchemaField[]{
+                        SchemaField.GeneralNumber,
+                        SchemaField.GeneralNumber
+                });
+                put(Key.NumberBoundaries, new long[][]{
+                        {1, Integer.MAX_VALUE},
+                        {1, Integer.MAX_VALUE}
+                });
+                put(Key.NumberIsSorted, true);
+            }}
+    };
  */
 public class Main{
     public static void main(String[] args) throws IOException {

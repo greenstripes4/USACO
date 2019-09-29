@@ -14,6 +14,7 @@ import java.util.*;
     static long[][] prefixBoundaries = { { 1, 1000 }, { 1, 1000000000 } };
 
     // Following line config
+    static boolean hasFollowLine = true;
     static int numberPerLine = 2;
     static int numberLines = 100;
     static boolean numberIsSorted = false;

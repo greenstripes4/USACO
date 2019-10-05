@@ -1,7 +1,4 @@
 import java.io.*;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
@@ -23,52 +20,56 @@ public class Main{
                     pos++;
                     t++;
                     if(alreadyVisited.containsKey(pos)){
-                        int time = alreadyVisited.get(pos);
-                        int diff = t - time;
-                        if (min == null || diff < min) {
-                            min = diff;
+                        int timeDiff = t - alreadyVisited.get(pos);
+                        if(min == null || timeDiff < min){
+                            min = timeDiff;
                         }
+                        alreadyVisited.put(pos,t);
+                    } else {
+                        alreadyVisited.put(pos,t);
                     }
-                    alreadyVisited.put(pos,t);
                 }
             } else if(direction.equals("S")){
                 for(int j = 0; j < steps; j++){
                     pos--;
                     t++;
-                    if(alreadyVisited.containsKey(pos)) {
-                        int time = alreadyVisited.get(pos);
-                        int diff = t - time;
-                        if (min == null || diff < min) {
-                            min = diff;
+                    if(alreadyVisited.containsKey(pos)){
+                        int timeDiff = t - alreadyVisited.get(pos);
+                        if(min == null || timeDiff < min){
+                            min = timeDiff;
                         }
+                        alreadyVisited.put(pos,t);
+                    } else {
+                        alreadyVisited.put(pos,t);
                     }
-                    alreadyVisited.put(pos,t);
+                }
+            }  else if(direction.equals("W")){
+                for(int j = 0; j < steps; j++){
+                    pos -= 10000;
+                    t++;
+                    if(alreadyVisited.containsKey(pos)){
+                        int timeDiff = t - alreadyVisited.get(pos);
+                        if(min == null || timeDiff < min){
+                            min = timeDiff;
+                        }
+                        alreadyVisited.put(pos,t);
+                    } else {
+                        alreadyVisited.put(pos,t);
+                    }
                 }
             } else if(direction.equals("E")){
                 for(int j = 0; j < steps; j++){
                     pos += 10000;
                     t++;
-                    if(alreadyVisited.containsKey(pos)) {
-                        int time = alreadyVisited.get(pos);
-                        int diff = t - time;
-                        if (min == null || diff < min) {
-                            min = diff;
+                    if(alreadyVisited.containsKey(pos)){
+                        int timeDiff = t - alreadyVisited.get(pos);
+                        if(min == null || timeDiff < min){
+                            min = timeDiff;
                         }
+                        alreadyVisited.put(pos,t);
+                    } else {
+                        alreadyVisited.put(pos,t);
                     }
-                    alreadyVisited.put(pos,t);
-                }
-            } else {
-                for(int j = 0; j < steps; j++){
-                    pos -= 10000;
-                    t++;
-                    if(alreadyVisited.containsKey(pos)) {
-                        int time = alreadyVisited.get(pos);
-                        int diff = t - time;
-                        if (min == null || diff < min) {
-                            min = diff;
-                        }
-                    }
-                    alreadyVisited.put(pos,t);
                 }
             }
         }

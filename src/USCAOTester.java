@@ -6,7 +6,7 @@ import java.nio.file.Files;
 
 public class USCAOTester {
     public static void main(String[] args) throws IOException {
-        final String problem = "gifts";
+        final String problem = "moo";
         File targetInput = new File(problem + ".in");
         File targetOutput = new File(problem + ".out");
         String[] tests = {"ray-test\\", "test\\"};
@@ -57,6 +57,7 @@ public class USCAOTester {
 
                 reader1.close();
                 reader2.close();
+                /*
                 if (targetInput.exists()) {
                     targetInput.delete();
                 }
@@ -64,12 +65,13 @@ public class USCAOTester {
                     targetOutput.delete();
                 }
 
+                 */
                 if (areEqual) {
                     System.out.println(test + ":" + i + " test passed in " + ((end - start) / 1000000) + "ms");
                 } else {
                     System.out.println(test + ":" + i + " test failed in " + ((end - start) / 1000000) + "ms");
-                    //System.out.println("Expected " + line1 + " and got " + line2 + " at line " + lineNum);
-                    System.exit(0);
+                    //System.out.println("Expected " + line2 + " and got " + line1 + " at line " + lineNum);
+                    //System.exit(0);
                 }
             }
         }

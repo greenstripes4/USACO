@@ -6,7 +6,7 @@ import java.nio.file.Files;
 
 public class USCAOTester {
     public static void main(String[] args) throws IOException {
-        final String problem = "moo";
+        final String problem = "lineup";
         File targetInput = new File(problem + ".in");
         File targetOutput = new File(problem + ".out");
         String[] tests = {"ray-test\\", "test\\"};
@@ -33,7 +33,12 @@ public class USCAOTester {
                 }
                 Files.copy(input.toPath(), targetInput.toPath());
                 long start = System.nanoTime();
-                Main.main(null);
+                try {
+                    Main.main(null);
+                } catch (Exception e) {
+                    System.out.println(test + ":" + i + " Runtime Error");
+                    continue;
+                }
                 long end = System.nanoTime();
 
                 BufferedReader reader1 = new BufferedReader(new FileReader(targetOutput));
@@ -57,21 +62,26 @@ public class USCAOTester {
 
                 reader1.close();
                 reader2.close();
-                /*
                 if (targetInput.exists()) {
                     targetInput.delete();
                 }
                 if (targetOutput.exists()) {
                     targetOutput.delete();
                 }
-
-                 */
+                long ms = ((end - start) / 1000000);
                 if (areEqual) {
-                    System.out.println(test + ":" + i + " test passed in " + ((end - start) / 1000000) + "ms");
+                    //for most contests, 2 seconds per input case for C, C++, and Pascal,
+                    // and 4 seconds per input case for Java and Python,
+                    // although the each contest or problem may use slightly different limits
+                    // USACO machine is about 10x slower than local, use 350 as TLE
+                    if(ms > 350){
+                        System.out.println(test + ":" + i + " test Time Limit Exceed with " + ms + "ms");
+                    } else {
+                        System.out.println(test + ":" + i + " test passed in " + ms + "ms");
+                    }
                 } else {
-                    System.out.println(test + ":" + i + " test failed in " + ((end - start) / 1000000) + "ms");
+                    System.out.println(test + ":" + i + " test failed in " + ms + "ms");
                     //System.out.println("Expected " + line2 + " and got " + line1 + " at line " + lineNum);
-                    //System.exit(0);
                 }
             }
         }

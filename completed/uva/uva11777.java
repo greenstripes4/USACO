@@ -1,49 +1,43 @@
-import java.io.*;
-import java.util.*;
 /*
-O(1)
-6
-15 18 25 8 15 17 12
-20 20 30 10 20 20 20
-20 20 30 10 18 0 0
-15 18 25 8 6 6 6
-15 18 25 8 0 0 0
-0 0 0 0 0 0 0
+ID: strongh2
+LANG: JAVA
+PROG: ariprog
+TASK: ariprog
  */
 
+import java.io.*;
+import java.util.*;
+
 public class Main{
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
+        //PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("loan.out")));
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
-        int numTests = Integer.parseInt(f.readLine());
-        for(int i = 0; i < numTests; i++){
+        PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
+        int testCases = Integer.parseInt(f.readLine());
+        for(int i = 1; i <= testCases; i++){
             StringTokenizer st = new StringTokenizer(f.readLine());
-            int term1 = Integer.parseInt(st.nextToken());
-            int term2 = Integer.parseInt(st.nextToken());
-            int finalTerm = Integer.parseInt(st.nextToken());
-            int attendance = Integer.parseInt(st.nextToken());
-            int[] tests = new int[3];
-            tests[0] = Integer.parseInt(st.nextToken());
-            tests[1] = Integer.parseInt(st.nextToken());
-            tests[2] = Integer.parseInt(st.nextToken());
-            Arrays.sort(tests);
-            int average = (tests[2] + tests[1])/2;
-            int total = term1 + term2 + finalTerm + attendance + average;
-            if(total >= 90){
-                System.out.println("Case " + (i+1) + ": A");
-            }
-            else if(total >= 80){
-                System.out.println("Case " + (i+1) + ": B");
-            }
-            else if(total >= 70){
-                System.out.println("Case " + (i+1) + ": C");
-            }
-            else if(total >= 60){
-                System.out.println("Case " + (i+1) + ": D");
-            }
-            else{
-                System.out.println("Case " + (i+1) + ": F");
+            int t1 = Integer.parseInt(st.nextToken());
+            int t2 = Integer.parseInt(st.nextToken());
+            int fi = Integer.parseInt(st.nextToken());
+            int at = Integer.parseInt(st.nextToken());
+            int c1 = Integer.parseInt(st.nextToken());
+            int c2 = Integer.parseInt(st.nextToken());
+            int c3 = Integer.parseInt(st.nextToken());
+            int sc = t1+t2+fi+at+(c1+c2+c3-Math.min(Math.min(c1,c2),c3))/2;
+            if(sc >= 90){
+                out.println("Case " + i + ": A");
+            } else if(sc >= 80) {
+                out.println("Case " + i + ": B");
+            } else if(sc >= 70) {
+                out.println("Case " + i + ": C");
+            } else if(sc >= 60) {
+                out.println("Case " + i + ": D");
+            } else {
+                out.println("Case " + i + ": F");
             }
         }
+        out.close();
+        f.close();
     }
 }

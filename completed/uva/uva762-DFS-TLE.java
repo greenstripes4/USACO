@@ -2,6 +2,25 @@ import java.io.*;
 import java.util.*;
 
 public class Main{
+    private static void dfs(HashMap<String,HashSet<String>> connections, String source, String destination, StringBuilder path, ArrayList<String> allPaths){
+        if(source.equals(destination)){
+            String temp = path.toString();
+            temp = temp.substring(0,temp.length()-1);
+            allPaths.add(temp);
+            return;
+        }
+        HashSet<String> nextCities = connections.get(source);
+        for(String i: nextCities){
+            if(path.indexOf(i) < 0){
+                path.append(source);
+                path.append(" ");
+                path.append(i);
+                path.append("\n");
+                dfs(connections,i,destination,path,allPaths);
+                path.delete(path.length()-6,path.length());
+            }
+        }
+    }
     public static void main(String[] args) throws IOException{
         //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
         //Scanner f = new Scanner(System.in);
@@ -29,41 +48,22 @@ public class Main{
             StringTokenizer st = new StringTokenizer(f.readLine());
             String source = st.nextToken();
             String destination = st.nextToken();
-            boolean found = false;
-            if(connections.containsKey(source) && connections.containsKey(destination)) {
-                Queue<String> queue = new LinkedList<>();
-                queue.add(source);
-                HashMap<String, String> parentage = new HashMap<>();
-                while (!queue.isEmpty()) {
-                    String next = queue.poll();
-                    if (next.equals(destination)) {
-                        found = true;
-                        break;
-                    }
-                    HashSet<String> neighbors = connections.get(next);
-                    for (String i : neighbors) {
-                        if (!parentage.containsKey(i)) {
-                            parentage.put(i, next);
-                            queue.add(i);
-                        }
-                    }
-                }
-                if(!found){
+            if(!connections.containsKey(source) || !connections.containsKey(destination)){
+                out.println("No route");
+            } else {
+                ArrayList<String> allPaths = new ArrayList<>();
+                dfs(connections, source, destination, new StringBuilder(), allPaths);
+                if (allPaths.size() == 0) {
                     out.println("No route");
                 } else {
-                    String parent = destination;
-                    ArrayList<String> path = new ArrayList<>();
-                    while(!parent.equals(source)){
-                        path.add(parentage.get(parent)+" "+parent);
-                        parent = parentage.get(parent);
+                    String shortestPath = "";
+                    for (String i : allPaths) {
+                        if (shortestPath.equals("") || i.length() < shortestPath.length()) {
+                            shortestPath = i;
+                        }
                     }
-                    Collections.reverse(path);
-                    for(String i: path){
-                        out.println(i);
-                    }
+                    out.println(shortestPath);
                 }
-            } else {
-                out.println("No route");
             }
             testCase++;
             f.readLine();

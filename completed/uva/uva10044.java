@@ -11,15 +11,22 @@ public class Main{
         int scenarios = Integer.parseInt(f.readLine());
         for(int s = 0; s < scenarios; s++){
             StringTokenizer st = new StringTokenizer(f.readLine());
+            while(st.countTokens() != 2) {
+                st = new StringTokenizer(f.readLine());
+            }
             int P = Integer.parseInt(st.nextToken());
             int N = Integer.parseInt(st.nextToken());
             HashMap<String,HashSet<String>> map = new HashMap<>();
             for(int i = 0; i < P; i++){
-                String[] authors = f.readLine().split(":")[0].split(", ");
+                String[] authors = f.readLine().split(":")[0].split(",\\s*");
                 String[] authorsFormatted = new String[authors.length/2];
                 int ind = 0;
                 for(int j = 0; j < authors.length; j += 2){
-                    authorsFormatted[ind] = authors[j] + ", " + authors[j+1];
+                    if(j < authors.length-1) {
+                        authorsFormatted[ind] = authors[j].trim() + "," + authors[j+1].trim();
+                    } else {
+                        authorsFormatted[ind] = authors[j].trim();
+                    }
                     ind++;
                 }
                 for(int j = 0; j < authorsFormatted.length; j++){
@@ -37,9 +44,9 @@ public class Main{
                 }
             }
             Queue<String> queue = new LinkedList<>();
-            queue.add("Erdos, P.");
+            queue.add("Erdos,P.");
             HashMap<String,Integer> erdosNumbers = new HashMap<>();
-            erdosNumbers.put("Erdos, P.",0);
+            erdosNumbers.put("Erdos,P.",0);
             while(!queue.isEmpty()) {
                 String next = queue.poll();
                 for(String i: map.get(next)) {
@@ -51,12 +58,14 @@ public class Main{
             }
             out.println("Scenario " + (s+1));
             for(int i = 0; i < N; i++){
-                String query = f.readLine();
+                String input = f.readLine();
+                String[] queryParts = input.trim().split(",\\s*");
+                String query = queryParts[0]+","+queryParts[1];
                 if(!map.containsKey(query) || !erdosNumbers.containsKey(query)){
-                    out.println(query + " infinity");
+                    out.println(input + " infinity");
                     continue;
                 }
-                out.println(query + " " + erdosNumbers.get(query));
+                out.println(input + " " + erdosNumbers.get(query));
             }
         }
         f.close();

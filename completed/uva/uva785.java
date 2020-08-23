@@ -23,12 +23,24 @@ public class Main{
             ArrayList<char[]> grid = new ArrayList<>();
             grid.add(input.toCharArray());
             String row;
-            while((row = f.readLine()).charAt(0) != '_') {
+            while((row = f.readLine()).length() == 0 || row.charAt(0) != '_') {
                 grid.add(row.toCharArray());
+            }
+            char contour = ' ';
+            for(char[] i: grid) {
+                for(char j: i) {
+                    if(j != '_' && j != ' ') {
+                        contour = j;
+                        break;
+                    }
+                }
+                if(contour != ' ') {
+                    break;
+                }
             }
             for(int i = 0; i < grid.size(); i++) {
                 for(int j = 0; j < grid.get(i).length; j++) {
-                    if(grid.get(i)[j] != 'X' && grid.get(i)[j] != ' ') {
+                    if(grid.get(i)[j] != contour && grid.get(i)[j] != ' ') {
                         char temp = grid.get(i)[j];
                         grid.get(i)[j] = ' ';
                         floodFill(grid,i,j,temp);

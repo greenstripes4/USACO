@@ -9,31 +9,36 @@ public class paraglidingPioneer {
         Scanner f = new Scanner(System.in);
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
         int N = f.nextInt();
-        int[] L = new int[N];
-        int[] U = new int[N];
-        int min = 1000000;
-        int max = 0;
+        int[][] intervals = new int[N*2][2];
         for(int i = 0; i < N; i++) {
-            L[i] = f.nextInt();
-            U[i] = f.nextInt();
-            min = Math.min(min,L[i]);
-            max = Math.max(max,U[i]);
+            int Li = f.nextInt();
+            int Ui = f.nextInt();
+            intervals[i*2][0] = Li;
+            intervals[i*2][1] = 0;
+            intervals[i*2+1][0] = Ui+1;
+            intervals[i*2+1][1] = 1;
         }
-        int best = -1;
-        int maxAppearances = 0;
-        for(int i = min; i <= max; i++) {
-            int appearances = 0;
-            for(int j = 0; j < N; j++) {
-                if(L[j] <= i && U[j] >= i) {
-                    appearances++;
+        Arrays.sort(intervals, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] ints, int[] t1) {
+                return ints[0]-t1[0];
+            }
+        });
+        int bestPosition = -1;
+        int maxIntersections = 0;
+        int intersections = 0;
+        for(int[] i: intervals) {
+            if(i[1] == 0) {
+                intersections++;
+                if(intersections > maxIntersections) {
+                    bestPosition = i[0];
+                    maxIntersections = intersections;
                 }
-            }
-            if(appearances > maxAppearances) {
-                best = i;
-                maxAppearances = appearances;
+            } else {
+                intersections--;
             }
         }
-        out.println(best);
+        out.println(bestPosition);
         f.close();
         out.close();
     }

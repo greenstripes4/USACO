@@ -21,9 +21,9 @@ public class Main{
                 set2.add(Integer.parseInt(st2.nextToken()));
             }
             if(set2.containsAll(set1) && set2.size() > set1.size()) {
-                out.println("A is a proper subset of B");
+                out.println("A is a proper runround of B");
             } else if(set1.containsAll(set2) && set1.size() > set2.size()) {
-                out.println("B is a proper subset of A");
+                out.println("B is a proper runround of A");
             } else if(set1.containsAll(set2)) {
                 out.println("A equals B");
             } else {

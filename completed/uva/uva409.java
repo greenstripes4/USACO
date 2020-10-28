@@ -23,7 +23,8 @@ public class Main {
             int maxKeywords = 0;
             for(int i = 0; i < E; i++) {
                 String original = f.readLine();
-                String[] formattedWords = original.toLowerCase().replaceAll("[\"'.,!?0-9]"," ").replaceAll(" +"," ").split(" ");
+                //String[] formattedWords = original.toLowerCase().replaceAll("[\"'.,!?0-9]"," ").replaceAll(" +"," ").split(" ");
+                String[] formattedWords = original.toLowerCase().split("[^ a-z]+");
                 sentences[i] = original;
                 excuses[i] = formattedWords;
                 int keywordCount = 0;

@@ -7,15 +7,18 @@ public class Main {
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
         int n = Integer.parseInt(f.readLine());
-        long sum = 0;
-        long max = 0;
+        int[] count = new int[n];
+        count[0] = 1;
         StringTokenizer st = new StringTokenizer(f.readLine());
+        long sum = 0;
+        long ans = 0;
         for(int i = 0; i < n; i++) {
-            int t = Integer.parseInt(st.nextToken());
-            sum += t;
-            max = Math.max(max, t);
+            sum += Integer.parseInt(st.nextToken());
+            int mod = (int) ((sum%n+n)%n);
+            ans += count[mod];
+            count[mod]++;
         }
-        out.println(Math.max(sum, max*2));
+        out.println(ans);
         f.close();
         out.close();
     }

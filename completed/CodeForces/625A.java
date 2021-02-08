@@ -6,16 +6,16 @@ public class Main {
         //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
-        int n = Integer.parseInt(f.readLine());
-        long sum = 0;
-        long max = 0;
-        StringTokenizer st = new StringTokenizer(f.readLine());
-        for(int i = 0; i < n; i++) {
-            int t = Integer.parseInt(st.nextToken());
-            sum += t;
-            max = Math.max(max, t);
+        long n = Long.parseLong(f.readLine());
+        long a = Long.parseLong(f.readLine());
+        long b = Long.parseLong(f.readLine());
+        long c = Long.parseLong(f.readLine());
+        if(b > n || b-c >= a) {
+            out.println(n/a);
+        } else {
+            long temp = (n-c)/(b-c);
+            out.println(temp+(n-(b-c)*temp)/a);
         }
-        out.println(Math.max(sum, max*2));
         f.close();
         out.close();
     }

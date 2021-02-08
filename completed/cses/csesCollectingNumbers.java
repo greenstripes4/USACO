@@ -7,15 +7,18 @@ public class Main {
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
         int n = Integer.parseInt(f.readLine());
-        long sum = 0;
-        long max = 0;
+        HashSet<Integer> next = new HashSet<>();
         StringTokenizer st = new StringTokenizer(f.readLine());
+        int rounds = 0;
         for(int i = 0; i < n; i++) {
-            int t = Integer.parseInt(st.nextToken());
-            sum += t;
-            max = Math.max(max, t);
+            int x = Integer.parseInt(st.nextToken());
+            if(!next.contains(x)) {
+                rounds++;
+            }
+            next.remove(x);
+            next.add(x+1);
         }
-        out.println(Math.max(sum, max*2));
+        out.println(rounds);
         f.close();
         out.close();
     }

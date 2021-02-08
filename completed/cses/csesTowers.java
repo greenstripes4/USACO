@@ -1,4 +1,5 @@
 import java.io.*;
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Main {
@@ -7,15 +8,25 @@ public class Main {
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
         int n = Integer.parseInt(f.readLine());
-        long sum = 0;
-        long max = 0;
+        TreeMap<Integer, Integer> map = new TreeMap<>();
         StringTokenizer st = new StringTokenizer(f.readLine());
         for(int i = 0; i < n; i++) {
-            int t = Integer.parseInt(st.nextToken());
-            sum += t;
-            max = Math.max(max, t);
+            int k = Integer.parseInt(st.nextToken());
+            Integer l = map.higherKey(k);
+            if(l != null){
+                if(map.get(l) == 1) {
+                    map.remove(l);
+                } else {
+                    map.put(l, map.get(l)-1);
+                }
+            }
+            map.put(k, map.getOrDefault(k, 0)+1);
         }
-        out.println(Math.max(sum, max*2));
+        int stacks = 0;
+        for(int i: map.values()) {
+            stacks += i;
+        }
+        out.println(stacks);
         f.close();
         out.close();
     }

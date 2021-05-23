@@ -3,15 +3,36 @@ import java.util.*;
 
 public class Main {
     private static int[] modifiedSieve;
+    private static boolean[] linearSieve;
     private static ArrayList<Integer> compressedPrimes;
     private static void calculateSieve() {
         modifiedSieve[0] = Integer.MAX_VALUE;
-        for(int i = 1; i < modifiedSieve.length; i++) {
-            for(int j = i; j < modifiedSieve.length; j += i) {
+        for (int i = 1; i < modifiedSieve.length; i++) {
+            for (int j = i; j < modifiedSieve.length; j += i) {
                 modifiedSieve[j]++;
             }
         }
     }
+    private static void calculateLinearSieve() {
+        compressedPrimes = new ArrayList<>();
+        linearSieve[0] = true;
+        linearSieve[1] = true;
+        for(int i = 2; i < linearSieve.length; i++) {
+            if(!linearSieve[i]) {
+                compressedPrimes.add(i);
+            }
+            for(int j: compressedPrimes) {
+                if(i*j >= linearSieve.length) {
+                    break;
+                }
+                linearSieve[i*j] = true;
+                if(i%j == 0) {
+                    break;
+                }
+            }
+        }
+    }
+    /*
     private static void calculateCompressedPrimes() {
         compressedPrimes = new ArrayList<>();
         for(int i = 2; i < modifiedSieve.length; i++) {
@@ -20,6 +41,7 @@ public class Main {
             }
         }
     }
+     */
     private static HashMap<Integer, Integer> getPrimeFactorization1(int x) {
         HashMap<Integer, Integer> primeFactorization = new HashMap<>();
         for(int p = 2; p*p  <= x; p++) {

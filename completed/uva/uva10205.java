@@ -1,70 +1,56 @@
 import java.io.*;
-import java.util.StringTokenizer;
-/*
-O(n)
-2
+import java.util.*;
 
-2
-2 1 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
-27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 52 51
-52 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
-27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 1
-1
-2
-
-1
-2 1 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
-27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 52 51
-1
-*/
-
-public class Main {
-    public static void main (String args[]) throws IOException {
-        //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
+public class Main{
+    public static void main(String[] args) throws IOException{
+        //Scanner f = new Scanner(new File("beads.in"));
+        //Scanner f = new Scanner(System.in);
+        //BufferedReader f = new BufferedReader(new FileReader("beads.in"));
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
+        PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
         int cases = Integer.parseInt(f.readLine());
         boolean first = true;
-        for(int i = 0; i < cases; i++){
-            if(!first){
-                System.out.println();
+        f.readLine();
+        while(cases-- > 0) {
+            if(!first) {
+                out.println();
             }
-            else{
-                f.readLine();
-            }
-            first = false;
             String[] deck = new String[52];
-            String[] suits = {"Clubs","Diamonds","Hearts","Spades"};
-            String[] values = {"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
-            int ind = 0;
-            for(int j = 0; j < 4; j++){
-                for(int k = 0; k < 13; k++){
-                    deck[ind] = values[k] + " of " + suits[j];
-                    ind++;
+            String[] suits = {"Clubs", "Diamonds", "Hearts", "Spades"};
+            String[] values = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
+            for(int i = 0; i < 4; i++) {
+                for(int j = 0; j < 13; j++) {
+                    deck[i*13+j] = values[j] + " of " + suits[i];
                 }
             }
-            int num_shuffles = Integer.parseInt(f.readLine());
-            int[][] moves = new int[num_shuffles][52];
-            String input;
-            StringTokenizer st = new StringTokenizer("");
-            for(int j = 0; j < num_shuffles; j++){
-                for(int j2 = 0; j2 < 52; j2++){
-                    if(!st.hasMoreTokens()){
+            int n = Integer.parseInt(f.readLine());
+            StringTokenizer st = new StringTokenizer(f.readLine());
+            int[][] moves = new int[n][52];
+            for(int i = 0; i < n; i++) {
+                for(int j = 0; j < 52;) {
+                    if(st.hasMoreTokens()) {
+                        moves[i][j] = Integer.parseInt(st.nextToken())-1;
+                        j++;
+                    } else {
                         st = new StringTokenizer(f.readLine());
                     }
-                    moves[j][j2] = Integer.parseInt(st.nextToken())-1;
                 }
             }
-            while((input = f.readLine()) != null && !(input.equals(""))){
-                String[] temp = new String[52];
-                int shuffle_num = Integer.parseInt(input);
-                for(int k = 0; k < 52; k++){
-                    temp[k] = deck[moves[shuffle_num-1][k]];
+            String input;
+            while((input = f.readLine()) != null && input.length() > 0) {
+                String[] next = new String[52];
+                int k = Integer.parseInt(input)-1;
+                for(int i = 0; i < 52; i++){
+                    next[i] = deck[moves[k][i]];
                 }
-                deck = temp;
+                deck = next;
             }
-            for (String n : deck) {
-                System.out.println(n);
+            for(String i: deck) {
+                out.println(i);
             }
+            first = false;
         }
+        f.close();
+        out.close();
     }
 }

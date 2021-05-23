@@ -61,7 +61,7 @@ public class Main {
             int[] dirR = {-1, 0, 0, 1};
             int[] dirC = {0, -1, 1, 0};
             boolean found = false;
-            for(int k = 0; k < 4; k++) {
+            for(int k = 0; k <= 4; k++) {
                 int size1 = queue1.size();
                 while(size1-- > 0) {
                     int temp = queue1.poll();
@@ -98,6 +98,9 @@ public class Main {
                     }
                 }
                 if(found) {
+                    break;
+                }
+                if(k == 4) {
                     break;
                 }
                 int size2 = queue2.size();

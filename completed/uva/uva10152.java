@@ -6,8 +6,6 @@ public class Main{
         //Scanner f = new Scanner(new File("uva.in"));
         //Scanner f = new Scanner(System.in);
         //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
-        //BufferedReader f = new BufferedReader(new FileReader("lightson.in"));
-        //PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("lightson.out")));
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
         int K = Integer.parseInt(f.readLine());

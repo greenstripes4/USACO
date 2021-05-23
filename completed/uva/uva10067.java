@@ -2,87 +2,71 @@ import java.io.*;
 import java.util.*;
 
 public class Main{
+    private static int move(int cur, int dir) {
+        return (cur+dir+10)%10;
+    }
     public static void main(String[] args) throws IOException{
         //Scanner f = new Scanner(new File("uva.in"));
         Scanner f = new Scanner(System.in);
         //BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
         int N = f.nextInt();
-        for(int i = 0; i < N; i++){
-            int initial = f.nextInt() * 1000 + f.nextInt() * 100 + f.nextInt() * 10 + f.nextInt();
-            int target = f.nextInt() * 1000 + f.nextInt() * 100 + f.nextInt() * 10 + f.nextInt();
-            boolean[] seen = new boolean[10000];
+        while(N-- > 0) {
+            int initial = 0;
+            for(int i = 0; i < 4; i++) {
+                initial = initial*10+f.nextInt();
+            }
+            int target = 0;
+            for(int i = 0; i < 4; i++) {
+                target = target*10+f.nextInt();
+            }
             int n = f.nextInt();
-            for(int j = 0; j < n; j++){
-                int forbidden = f.nextInt() * 1000 + f.nextInt() * 100 + f.nextInt() * 10 + f.nextInt();
-                seen[forbidden] = true;
+            boolean[] forbidden = new boolean[10000];
+            while(n-- > 0) {
+                int temp = 0;
+                for(int i = 0; i < 4; i++) {
+                    temp = temp*10+f.nextInt();
+                }
+                forbidden[temp] = true;
+            }
+            if(forbidden[initial] || forbidden[target]) {
+                out.println(-1);
+                continue;
             }
             Queue<Integer> queue = new LinkedList<>();
-            queue.add(initial);
-            boolean found = false;
+            boolean[] visited = new boolean[10000];
+            queue.offer(initial);
+            visited[initial] = true;
+            int[] dir1 = {-1, 1, 0, 0, 0, 0, 0, 0};
+            int[] dir2 = {0, 0, -1, 1, 0, 0, 0, 0};
+            int[] dir3 = {0, 0, 0, 0, -1, 1, 0, 0};
+            int[] dir4 = {0, 0, 0, 0, 0, 0, -1, 1};
             int steps = 0;
-            while(!queue.isEmpty()){
+            boolean found = false;
+            while(!queue.isEmpty()) {
                 int size = queue.size();
-                for(int j = 0; j < size; j++) {
-                    int next = queue.poll();
-                    if (next == target) {
+                while(size-- > 0) {
+                    int cur = queue.poll();
+                    if(cur == target) {
                         found = true;
                         break;
                     }
-                    int first = next / 1000;
-                    next %= 1000;
-                    int second = next / 100;
-                    next %= 100;
-                    int third = next / 10;
-                    next %= 10;
-                    int fourth = next;
-                    int transformation1 = ((first + 1) % 10) * 1000 + second * 100 + third * 10 + fourth;
-                    if (!seen[transformation1]) {
-                        queue.add(transformation1);
-                        seen[transformation1] = true;
-                    }
-                    int transformation2 = first * 1000 + ((second + 1) % 10) * 100 + third * 10 + fourth;
-                    if (!seen[transformation2]) {
-                        queue.add(transformation2);
-                        seen[transformation2] = true;
-                    }
-                    int transformation3 = first * 1000 + second * 100 + ((third + 1) % 10) * 10 + fourth;
-                    if (!seen[transformation3]) {
-                        queue.add(transformation3);
-                        seen[transformation3] = true;
-                    }
-                    int transformation4 = first * 1000 + second * 100 + third * 10 + ((fourth + 1) % 10);
-                    if (!seen[transformation4]) {
-                        queue.add(transformation4);
-                        seen[transformation4] = true;
-                    }
-                    int transformation5 = ((first - 1) < 0 ? 9 : first - 1) * 1000 + second * 100 + third * 10 + fourth;
-                    if (!seen[transformation5]) {
-                        queue.add(transformation5);
-                        seen[transformation5] = true;
-                    }
-                    int transformation6 = first * 1000 + ((second - 1) < 0 ? 9 : second - 1) * 100 + third * 10 + fourth;
-                    if (!seen[transformation6]) {
-                        queue.add(transformation6);
-                        seen[transformation6] = true;
-                    }
-                    int transformation7 = first * 1000 + second * 100 + ((third - 1) < 0 ? 9 : third - 1) * 10 + fourth;
-                    if (!seen[transformation7]) {
-                        queue.add(transformation7);
-                        seen[transformation7] = true;
-                    }
-                    int transformation8 = first * 1000 + second * 100 + third * 10 + ((fourth - 1) < 0 ? 9 : fourth - 1);
-                    if (!seen[transformation8]) {
-                        queue.add(transformation8);
-                        seen[transformation8] = true;
+                    int[] decoded = {cur/1000, (cur/100)%10, (cur/10)%10, cur%10};
+                    for(int i = 0; i < 8; i++) {
+                        int[] next = {move(decoded[0], dir1[i]), move(decoded[1], dir2[i]), move(decoded[2], dir3[i]), move(decoded[3], dir4[i])};
+                        int encoded = next[0]*1000+next[1]*100+next[2]*10+next[3];
+                        if(!forbidden[encoded] && !visited[encoded]) {
+                            queue.offer(encoded);
+                            visited[encoded] = true;
+                        }
                     }
                 }
-                if(found){
+                if(found) {
                     break;
                 }
                 steps++;
             }
-            out.println(found ? steps:-1);
+            out.println(found ? steps : -1);
         }
         f.close();
         out.close();

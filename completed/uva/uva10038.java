@@ -1,36 +1,36 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Main{
     public static void main(String[] args)throws IOException{
-        BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
-        int count = 1;
-        String input;
         //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
-        while((input = f.readLine()) != null){
-            StringTokenizer st = new StringTokenizer(input);
-            int num_elements = Integer.parseInt(st.nextToken());
-            int[] elements = new int[num_elements];
-            for(int i = 0; i < num_elements; i++){
-                elements[i] = Integer.parseInt(st.nextToken());
+        //BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
+        //Scanner f = new Scanner(new File("uva.in"));
+        Scanner f = new Scanner(System.in);
+        PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
+        while(f.hasNext()) {
+            int n = f.nextInt();
+            int[] a = new int[n];
+            for(int i = 0; i < n; i++) {
+                a[i] = f.nextInt();
             }
-            ArrayList<Integer> look_for = new ArrayList<>();
-            for(int j = 1; j <= num_elements-1; j++){
-                look_for.add(j);
-            }
-            for(int k = 0; k < num_elements-1; k++){
-                if(look_for.contains(Math.abs(elements[k+1] - elements[k]))){
-                    int index = look_for.indexOf(Math.abs(elements[k+1] - elements[k]));
-                    look_for.remove(index);
+            boolean[] found = new boolean[n];
+            for(int i = 1; i < n; i++) {
+                int diff = Math.abs(a[i]-a[i-1]);
+                if(diff > 0 && diff < n) {
+                    found[diff] = true;
                 }
             }
-            if(look_for.size() == 0){
-                System.out.println("Jolly");
+            boolean flag = false;
+            for(int i = 1; i < n; i++) {
+                if(!found[i]) {
+                    flag = true;
+                    break;
+                }
             }
-            else{
-                System.out.println("Not jolly");
-            }
+            out.println(flag ? "Not jolly" : "Jolly");
         }
+        f.close();
+        out.close();
     }
 }

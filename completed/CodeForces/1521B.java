@@ -18,11 +18,20 @@ public class Main {
                     min = i;
                 }
             }
-            out.println(n);
-            out.println((min+1) + " " + n + " " + a[n-1] + " " + a[min]);
-            for(int i = 0; i < n-1; i++) {
-                out.println((i+1) + " " + n + " " + (i%2 == 0 ? 1000000007 : 1000000009) + " " + a[min]);
+            int count = 0;
+            StringBuilder sb = new StringBuilder();
+            if(min+1 != n) {
+                count++;
+                sb.append((min+1) + " " + n + " " + a[n-1] + " " + a[min] + "\n");
             }
+            for(int i = 0; i < n-1; i++) {
+                if(i+1 != n) {
+                    count++;
+                    sb.append((i+1) + " " + n + " " + (i%2 == 0 ? 1000000007 : 1000000009) + " " + a[min] + "\n");
+                }
+            }
+            out.println(count);
+            out.print(sb);
         }
         f.close();
         out.close();

@@ -3,29 +3,27 @@ import java.util.*;
 
 public class Main{
     public static void main(String[] args) throws IOException{
-        //BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
-        BufferedReader f = new BufferedReader(new FileReader("uva.in"));
-        int cases = Integer.parseInt(f.readLine());
-        for(int i = 0; i < cases; i++){
+        //Scanner f = new Scanner(new File("uva.in"));
+        //Scanner f = new Scanner(System.in);
+        //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
+        BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
+        PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
+        int T = Integer.parseInt(f.readLine());
+        while(T-- > 0) {
             StringTokenizer st = new StringTokenizer(f.readLine());
-            ArrayList<Integer> x = new ArrayList<>();
-            int numL = Integer.parseInt(st.nextToken());
-            for(int l = 0; l < numL; l++) {
-                x.add(Integer.parseInt(st.nextToken()));
+            int r = Integer.parseInt(st.nextToken());
+            int[] s = new int[r];
+            for(int i = 0; i < r; i++) {
+                s[i] = Integer.parseInt(st.nextToken());
             }
-            Collections.sort(x);
-            int min = x.get(0);
-            int max = x.get(x.size()-1);
-            ArrayList<Integer> cL = new ArrayList<>();
-            for(int j = min; j <= max; j++){
-                int count = 0;
-                for(int k: x){
-                    count += Math.abs(k-j);
-                }
-                cL.add(count);
+            Arrays.sort(s);
+            int d = 0;
+            for(int i = 0; i < r; i++) {
+                d += Math.abs(s[r/2]-s[i]);
             }
-            Collections.sort(cL);
-            System.out.println(cL.get(0));
+            out.println(d);
         }
+        f.close();
+        out.close();
     }
 }

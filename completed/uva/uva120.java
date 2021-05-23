@@ -2,74 +2,45 @@ import java.io.*;
 import java.util.*;
 
 public class Main{
-    private static boolean isSorted(int[] arr){
-        int prev = arr[0];
-        for(int i = 1; i < arr.length; i++){
-            if(arr[i] < prev){
-                return false;
-            }
-            prev = arr[i];
-        }
-        return true;
-    }
-    private static int getMaxInd(int[] arr, int upperBound){
-        int maxInd = 0;
-        for(int i = 1; i < upperBound; i++){
-            if(arr[i] > arr[maxInd]){
-                maxInd = i;
-            }
-        }
-        return maxInd;
-    }
-    private static void flip(int[] arr, int ind){
-        int i = 0;
-        int j = ind-1;
-        while(i < j){
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
-            i++;
-            j--;
-        }
-    }
     public static void main(String[] args) throws IOException{
         //Scanner f = new Scanner(new File("uva.in"));
         //Scanner f = new Scanner(System.in);
         //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
-        //BufferedReader f = new BufferedReader(new FileReader("lightson.in"));
-        //PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("lightson.out")));
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
         String input;
-        while((input = f.readLine()) != null){
+        while((input = f.readLine()) != null) {
             StringTokenizer st = new StringTokenizer(input);
-            int[] arr = new int[st.countTokens()];
-            for(int i = 0; i < arr.length; i++){
-                if(i > 0){
-                    out.print(" ");
-                }
-                arr[i] = Integer.parseInt(st.nextToken());
-                out.print(arr[i]);
+            int[] stack = new int[st.countTokens()];
+            for(int i = 0; i < stack.length; i++) {
+                stack[i] = Integer.parseInt(st.nextToken());
             }
-            out.println();
-            List<Integer> sequence = new LinkedList<>();
-            int sortedInd = arr.length;
-            while(!isSorted(arr)){
-                int maxInd = getMaxInd(arr,sortedInd);
-                if(maxInd != sortedInd-1){
-                    if(maxInd != 0){
-                        flip(arr,maxInd+1);
-                        sequence.add(arr.length-maxInd);
+            out.println(input);
+            int idx = stack.length;
+            while(idx > 1) {
+                int min = 0;
+                for(int i = 1; i < idx; i++) {
+                    if(stack[i] < stack[min]) {
+                        min = i;
                     }
-                    flip(arr,sortedInd);
-                    sequence.add(arr.length-sortedInd+1);
                 }
-                sortedInd--;
+                out.print(stack.length-min);
+                out.print(" ");
+                for(int i = 0; i < (min+1)/2; i++) {
+                    int temp = stack[i];
+                    stack[i] = stack[min-i];
+                    stack[min-i] = temp;
+                }
+                out.print(stack.length-idx+1);
+                out.print(" ");
+                for(int i = 0; i < idx/2; i++) {
+                    int temp = stack[i];
+                    stack[i] = stack[idx-i-1];
+                    stack[idx-i-1] = temp;
+                }
+                idx--;
             }
-            for(int i: sequence){
-                out.print(i+" ");
-            }
-            out.println(0);
+            out.println("1 0");
         }
         f.close();
         out.close();

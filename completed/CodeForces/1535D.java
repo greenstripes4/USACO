@@ -2,39 +2,55 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    private static int getPrimeFactorization1(int x) {
-        int primeFactorization = 0;
-        for(int p = 2; p*p  <= x; p++) {
-            while(x%p == 0) {
-                primeFactorization++;
-                x /= p;
-            }
+    private static int[] segmentTree;
+    private static int[] arr;
+    private static void build(int u) {
+        if(u*2 >= arr.length) {
+            segmentTree[u] = arr[u] == 2 ? 2 : 1;
+            return;
         }
-        if(x > 1) {
-            primeFactorization++;
-        }
-        return primeFactorization;
+        build(u*2);
+        build(u*2+1);
+        segmentTree[u] = arr[u] == 2 ? segmentTree[u*2]+segmentTree[u*2+1] : arr[u] == 1 ? segmentTree[u*2] : segmentTree[u*2+1];
     }
-    public static void main(String[] args) throws IOException{
+    private static void update(int u) {
+        if(u == 0) {
+            return;
+        }
+        if(u*2 >= arr.length) {
+            segmentTree[u] = arr[u] == 2 ? 2 : 1;
+        } else {
+            segmentTree[u] = arr[u] == 2 ? segmentTree[u*2]+segmentTree[u*2+1] : arr[u] == 1 ? segmentTree[u*2] : segmentTree[u*2+1];
+        }
+        update(u/2);
+    }
+    public static void main(String[] args) throws IOException {
         //Scanner f = new Scanner(new File("uva.in"));
         //Scanner f = new Scanner(System.in);
         //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
-        int t = Integer.parseInt(f.readLine());
-        while(t-- > 0) {
+        int k = Integer.parseInt(f.readLine());
+        char[] s = f.readLine().toCharArray();
+        for(int i = 0; i < s.length/2; i++) {
+            char temp = s[i];
+            s[i] = s[s.length-i-1];
+            s[s.length-i-1] = temp;
+        }
+        arr = new int[1 << k];
+        for(int i = 1; i < 1 << k; i++) {
+            arr[i] = s[i-1] == '?' ? 2 : s[i-1]-'0';
+        }
+        segmentTree = new int[1 << k];
+        build(1);
+        int q = Integer.parseInt(f.readLine());
+        for(int i = 0; i < q; i++) {
             StringTokenizer st = new StringTokenizer(f.readLine());
-            int a = Integer.parseInt(st.nextToken());
-            int b = Integer.parseInt(st.nextToken());
-            int k = Integer.parseInt(st.nextToken());
-            if(a > b) {
-                int temp = a;
-                a = b;
-                b = temp;
-            }
-            int min = a == b ? 0 : b%a == 0 ? 1 : 2;
-            int max = getPrimeFactorization1(a)+getPrimeFactorization1(b);
-            out.println((k >= min && k <= max) && ((k == 1 && min == 1) || (k != 1)) ? "YES" : "NO");
+            int p = (1 << k)-Integer.parseInt(st.nextToken());
+            char c = st.nextToken().charAt(0);
+            arr[p] = c == '?' ? 2 : c-'0';
+            update(p);
+            out.println(segmentTree[1]);
         }
         f.close();
         out.close();

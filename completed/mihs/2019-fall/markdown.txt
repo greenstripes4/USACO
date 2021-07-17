@@ -1,0 +1,11 @@
+=Sponsors=
+*Platinum Sponsor:* [Sponsor Name](http://sponsor.com)
+![Sponsor Logo](about_Sponsor.png)
+==About Sponsor==
+This sponsor provides many services to students, including preparation
+for _this test_. For a more comprehensive list, look at this list:
+* Service 1
+* Service 2
+* and of course *Service 3*
+::Please Help Us by Checking Out Our Sponsors!::
+*_Thank You!_*

@@ -185,7 +185,7 @@ public class BruteForceTester {
             //output2DArray(printWriter, shuffle(getUnweightTree(10)));
             //output2DArray(printWriter, shuffle(getWeightTree(10, 100)));
             //output2DArray(printWriter, shuffle(getUnweightGraph(10,20)));
-            output2DArray(printWriter, shuffle(getWeightGraph(10,20, 10)));
+            //output2DArray(printWriter, shuffle(getWeightGraph(10,20, 10)));
         }
         printWriter.close();
     }
@@ -213,8 +213,6 @@ public class BruteForceTester {
                 }
                 testGenerator();
             }
-            continue; // only generate test cases
-            /*
             System.setOut(om);
             Main.main(null);
             System.setOut(obf);
@@ -249,7 +247,6 @@ public class BruteForceTester {
             }
             reader1.close();
             reader2.close();
-             */
         }
     }
 }

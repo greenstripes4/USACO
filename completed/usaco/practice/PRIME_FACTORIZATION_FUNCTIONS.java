@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Main {
     private static int[] modifiedSieve;
-    private static boolean[] linearSieve;
+    private static int[] linearSieve;
     private static ArrayList<Integer> compressedPrimes;
     private static void calculateSieve() {
         modifiedSieve[0] = Integer.MAX_VALUE;
@@ -13,19 +13,23 @@ public class Main {
             }
         }
     }
+
+    //https://codeforces.com/blog/entry/92715
+    //https://codeforces.com/blog/entry/54090, store the minimal prime factor for "i" in linearSieve[i]
     private static void calculateLinearSieve() {
         compressedPrimes = new ArrayList<>();
-        linearSieve[0] = true;
-        linearSieve[1] = true;
+        linearSieve[0] = 1;
+        linearSieve[1] = 1;
         for(int i = 2; i < linearSieve.length; i++) {
-            if(!linearSieve[i]) {
+            if(linearSieve[i]==0) {
+                linearSieve[i]=i;
                 compressedPrimes.add(i);
             }
             for(int j: compressedPrimes) {
                 if(i*j >= linearSieve.length) {
                     break;
                 }
-                linearSieve[i*j] = true;
+                linearSieve[i*j] = j;
                 if(i%j == 0) {
                     break;
                 }
@@ -59,6 +63,7 @@ public class Main {
         }
         return primeFactorization;
     }
+
     private static HashMap<Integer, Integer> getPrimeFactorization2(int x) {
         HashMap<Integer, Integer> primeFactorization = new HashMap<>();
         for(int p: compressedPrimes) {
@@ -79,6 +84,29 @@ public class Main {
         }
         return primeFactorization;
     }
+
+    // need to call calculateLinearSieve before using this one
+    private static HashMap<Integer, Integer> getPrimeFactorizationWithLinearSieve(int x) {
+        HashMap<Integer, Integer> primeFactorization = new HashMap<>();
+        if(x<2) return primeFactorization;
+        int preP = -1;
+        int count = 0;
+        while (x != 1) {
+            if(linearSieve[x] == preP){
+                count++;
+            } else {
+                if(preP!=-1){
+                    primeFactorization.put(preP, count);
+                }
+                preP=linearSieve[x];
+                count=1;
+            }
+            x /= linearSieve[x];
+        }
+        primeFactorization.put(preP, count);
+        return primeFactorization;
+    }
+
     private static int getDivisors1(int x) {
         HashMap<Integer, Integer> primeFactorization = getPrimeFactorization1(x);
         int count = 0;
@@ -102,7 +130,9 @@ public class Main {
         //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
-
+        linearSieve = new int[101];
+        calculateLinearSieve();
+        HashMap<Integer, Integer> pf = getPrimeFactorizationWithLinearSieve(60);
         f.close();
         out.close();
     }

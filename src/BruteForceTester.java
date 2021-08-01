@@ -19,13 +19,13 @@ public class BruteForceTester {
     public static void ABTest(int rounds) throws Exception{
         // Store current System.out before assigning a new value
         PrintStream console = System.out;
-        File targetInput = new File("uva.in");
-        File mainOutput = new File("main.out");
-        File mainBFOutput = new File("mainbf.out");
-        PrintStream om = new PrintStream(mainOutput);
-        PrintStream obf = new PrintStream(mainBFOutput);
 
         for (int i = 1; i <= rounds; i++) {
+            File targetInput = new File("uva.in");
+            File mainOutput = new File("main.out");
+            File mainBFOutput = new File("mainbf.out");
+            PrintStream om = new PrintStream(mainOutput);
+            PrintStream obf = new PrintStream(mainBFOutput);
             // comment to false if you generate the uva.in manually
             if (true) {
                 if(!isMacOs()) {
@@ -88,11 +88,12 @@ public class BruteForceTester {
     public static void ValidtorTest(int rounds) throws Exception {
         // Store current System.out before assigning a new value
         PrintStream console = System.out;
-        File targetInput = new File("uva.in");
-        File mainOutput = new File("main.out");
-        PrintStream om = new PrintStream(mainOutput);
 
         for (int i = 1; i <= rounds; i++) {
+            File targetInput = new File("uva.in");
+            File mainOutput = new File("main.out");
+            PrintStream om = new PrintStream(mainOutput);
+
             // comment to false if you generate the uva.in manually
             if (true) {
                 if(!isMacOs()) {

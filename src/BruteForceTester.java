@@ -11,30 +11,37 @@ import java.util.List;
 import java.util.Random;
 
 public class BruteForceTester {
+    public static boolean isMacOs(){
+        String osName = System.getProperty("os.name").toLowerCase();
+        return osName.startsWith("mac os x");
+    }
 
     public static void ABTest(int rounds) throws Exception{
         // Store current System.out before assigning a new value
         PrintStream console = System.out;
+        File targetInput = new File("uva.in");
+        File mainOutput = new File("main.out");
+        File mainBFOutput = new File("mainbf.out");
+        PrintStream om = new PrintStream(mainOutput);
+        PrintStream obf = new PrintStream(mainBFOutput);
 
         for (int i = 1; i <= rounds; i++) {
-            File targetInput = new File("uva.in");
-            File mainOutput = new File("main.out");
-            File mainBFOutput = new File("mainbf.out");
-            PrintStream om = new PrintStream(mainOutput);
-            PrintStream obf = new PrintStream(mainBFOutput);
             // comment to false if you generate the uva.in manually
             if (true) {
-                if (targetInput.exists()) {
-                    targetInput.delete();
-                }
-                if (mainOutput.exists()) {
-                    mainOutput.delete();
-                }
-                if (mainBFOutput.exists()) {
-                    mainBFOutput.delete();
+                if(!isMacOs()) {
+                    if (targetInput.exists()) {
+                        targetInput.delete();
+                    }
+                    if (mainOutput.exists()) {
+                        mainOutput.delete();
+                    }
+                    if (mainBFOutput.exists()) {
+                        mainBFOutput.delete();
+                    }
                 }
                 TestGenerator.generate();
             }
+
             System.setOut(om);
             long start = System.nanoTime();
             Main.main(null);
@@ -81,20 +88,22 @@ public class BruteForceTester {
     public static void ValidtorTest(int rounds) throws Exception {
         // Store current System.out before assigning a new value
         PrintStream console = System.out;
+        File targetInput = new File("uva.in");
+        File mainOutput = new File("main.out");
+        PrintStream om = new PrintStream(mainOutput);
 
         for (int i = 1; i <= rounds; i++) {
-            File targetInput = new File("uva.in");
-            File mainOutput = new File("main.out");
-            PrintStream om = new PrintStream(mainOutput);
             // comment to false if you generate the uva.in manually
             if (true) {
-                if (targetInput.exists()) {
-                    targetInput.delete();
+                if(!isMacOs()) {
+                    if (targetInput.exists()) {
+                        targetInput.delete();
+                    }
+                    if (mainOutput.exists()) {
+                        mainOutput.delete();
+                    }
+                    TestGenerator.generate();
                 }
-                if (mainOutput.exists()) {
-                    mainOutput.delete();
-                }
-                TestGenerator.generate();
             }
             System.setOut(om);
             Main.main(null);
@@ -109,7 +118,7 @@ public class BruteForceTester {
         }
     }
     public static void main(String[] args) throws Exception {
-        ABTest(10);
+        ABTest(1000);
         //ValidtorTest(1000);
     }
 }

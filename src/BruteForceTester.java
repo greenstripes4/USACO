@@ -64,7 +64,7 @@ public class BruteForceTester {
                 System.out.println("Random test " + i + " passed");
             } else {
                 System.out.println("Random test " + i + " failed");
-                System.out.println("Expected " + line1 + " and got " + line2 + " at line " + lineNum);
+                System.out.println("Expected " + line2 + " and got " + line1 + " at line " + lineNum);
                 break;
             }
             reader1.close();
@@ -103,7 +103,7 @@ public class BruteForceTester {
         }
     }
     public static void main(String[] args) throws Exception {
-        //ABTest(1000);
-        ValidtorTest(1000);
+        ABTest(1000);
+        //ValidtorTest(1000);
     }
 }

@@ -23,9 +23,9 @@ public class Main {
         return dp[cnt][sum] = ans;
     }
     public static void main(String[] args) throws IOException {
-        //BufferedReader f = new BufferedReader(new FileReader("beads.in"));
+        //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
         //BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
-        //Scanner f = new Scanner(new File("beads.in"));
+        //Scanner f = new Scanner(new File("uva.in"));
         Scanner f = new Scanner(System.in);
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
         int T = f.nextInt();

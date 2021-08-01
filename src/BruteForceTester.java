@@ -36,9 +36,15 @@ public class BruteForceTester {
                 TestGenerator.generate();
             }
             System.setOut(om);
+            long start = System.nanoTime();
             Main.main(null);
+            long end = System.nanoTime();
+            long msMain = ((end - start) / 1000000);
             System.setOut(obf);
+            start = System.nanoTime();
             MainBruteforce.main(null);
+            end = System.nanoTime();
+            long msBF = ((end - start) / 1000000);
             System.setOut(console);
 
             BufferedReader reader1 = new BufferedReader(new FileReader(mainOutput));
@@ -61,7 +67,7 @@ public class BruteForceTester {
             }
 
             if (areEqual) {
-                System.out.println("Random test " + i + " passed");
+                System.out.println("Random test " + i + " passed within (" + msMain + "|" + msBF + "ms)");
             } else {
                 System.out.println("Random test " + i + " failed");
                 System.out.println("Expected " + line2 + " and got " + line1 + " at line " + lineNum);
@@ -103,7 +109,7 @@ public class BruteForceTester {
         }
     }
     public static void main(String[] args) throws Exception {
-        ABTest(1000);
+        ABTest(10);
         //ValidtorTest(1000);
     }
 }

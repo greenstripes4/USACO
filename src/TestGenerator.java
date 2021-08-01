@@ -181,10 +181,10 @@ public class TestGenerator {
             //output2DArray(printWriter, shuffle(getWeightTree(10, 100)));
             //output2DArray(printWriter, shuffle(getUnweightGraph(10,20)));
             //output2DArray(printWriter, shuffle(getWeightGraph(10,20, 10)));
-            printWriter.println(getRandomString(1000, new char[] {'.'}));
+            printWriter.println(getRandomString(1000, new char[] {'.', '#'}));
         }
-        printWriter.println("1 1 2 2");
-        printWriter.println("2 2 999 999");
+        printWriter.println("2 2 3 3");
+        printWriter.println("3 3 4 4");
         printWriter.close();
     }
 }

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="94fff687-1e65-4c1d-8fc2-789b0d406c79" name="Default Changelist" comment="Added time comparison for BruteForceTester">
+      <change afterPath="$PROJECT_DIR$/cftags/binary search.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/bitmasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/brute force.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/combinatorics.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/constructive algorithms.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/data structures.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/dfs and similar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/divide and conquer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/dp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/dsu.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/expression parsing.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/flows.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/games.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/geometry.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/graph matchings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/graphs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/greedy.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/hashing.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/implementation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/math.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/matrices.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/number theory.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/probabilities.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/schedules.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/shortest paths.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/sortings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/string suffix structures.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/ternary search.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/trees.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/two pointers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/json-20210307.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CFRecommender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/USACO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beads.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/beads.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/usaco/training/beads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moobuzz.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1sEMQgUUVSjCbWs3ralkaoeEuD5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\CodeForces" />
+      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\POJ" />
+      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\usaco" />
+      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\usaco\practice" />
+      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\uva" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\cftags" />
+      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\usaco\practice" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CFRecommender">
+    <configuration name="BruteForceTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BruteForceTester" />
+      <module name="USACO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CFRecommender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CFRecommender" />
+      <module name="USACO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="USACO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainBruteforce" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainBruteforce" />
+      <module name="USACO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainRay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainRay" />
+      <module name="USACO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CFRecommender" />
+        <item itemvalue="Application.BruteForceTester" />
+        <item itemvalue="Application.MainBruteforce" />
+        <item itemvalue="Application.MainRay" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="94fff687-1e65-4c1d-8fc2-789b0d406c79" name="Default Changelist" comment="" />
+      <created>1620433286651</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620433286651</updated>
+    </task>
+    <task id="LOCAL-00001" summary="https://vjudge.net/article/457 practices">
+      <created>1620515969078</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620515969078</updated>
+    </task>
+    <task id="LOCAL-00002" summary="https://vjudge.net/article/419 practices">
+      <created>1621050094355</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621050094355</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Some https://vjudge.net/article/419 practices&#10;Some templates update&#10;Some CodeForces 1600 practices">
+      <created>1623477727312</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623477727312</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactor BruteForceTester and add support for result validator">
+      <created>1627070444563</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627070444564</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added time comparison for BruteForceTester">
+      <created>1627781315223</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627781315223</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="https://vjudge.net/article/457 practices" />
+    <MESSAGE value="https://vjudge.net/article/419 practices" />
+    <MESSAGE value="Some https://vjudge.net/article/419 practices&#10;Some templates update&#10;Some CodeForces 1600 practices" />
+    <MESSAGE value="Refactor BruteForceTester and add support for result validator" />
+    <MESSAGE value="Added time comparison for BruteForceTester" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added time comparison for BruteForceTester" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.json.JSONException" package="org.json" />
+          <option name="timeStamp" value="17" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CFRecommender.java</url>
+          <line>253</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CFRecommender.java</url>
+          <line>265</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CFRecommender.java</url>
+          <line>219</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="score[0]" />
+        <watch expression="visited[1][1]" language="JAVA" />
+        <watch expression="visited[999][999]" language="JAVA" />
+        <watch expression="visited[2][2]" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

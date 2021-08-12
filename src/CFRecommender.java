@@ -234,7 +234,7 @@ public class CFRecommender {
                 if(tags.getString(j).equalsIgnoreCase(tag)){
                     int contestId = problem.getInt("contestId");
                     String index = problem.getString("index");
-                    result.add("https://codeforces.com/problemset/problem/"+contestId+"/"+index);
+                    result.add("https://codeforces.com/problemset/problem/"+contestId+"/"+index + " " + problem.getInt("rating"));
                     break;
                 }
             }
@@ -262,10 +262,10 @@ public class CFRecommender {
         int count = 0;
         for(String tag : wrongSubmissions.keySet()){
             int minRating = (int)(acTagRatings.get(tag)/100) * 100;
-            int maxRating = minRating + 100;
-            result.addAll(getProblems(tag, minRating, maxRating, 1));
+            //int maxRating = minRating + 100;
+            result.addAll(getProblems(tag, minRating, minRating, 2));
             count++;
-            if(count==5) break;
+            if(result.size()==5) break;
         }
         return result;
     }

@@ -9,7 +9,7 @@ public class Main {
         return add(a, -b);
     }
     private static int multiply(long a, long b) {
-        return (int) ((a%MOD*b%MOD)%MOD);
+        return (int) (((a%MOD)*(b%MOD))%MOD);
     }
     private static int divide(long a, long b) {
         return multiply(a, modularInverse(b));

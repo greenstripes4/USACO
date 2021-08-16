@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75930b8c-5fcc-4eba-8efe-fb2f56a73e53" name="Default Changelist" comment="Added time comparison for BruteForceTester" />
+    <list default="true" id="75930b8c-5fcc-4eba-8efe-fb2f56a73e53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cftags/binary search.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/bitmasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/brute force.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/combinatorics.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/constructive algorithms.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/data structures.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/dfs and similar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/divide and conquer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/dp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/dsu.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/expression parsing.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/flows.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/games.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/geometry.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/graph matchings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/graphs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/greedy.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/hashing.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/implementation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/math.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/matrices.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/number theory.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/probabilities.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/schedules.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/shortest paths.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/sortings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/string suffix structures.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/ternary search.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/trees.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cftags/two pointers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/json-20210307.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CFRecommender.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,8 +132,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/completed/CodeForces" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -121,7 +154,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.CFRecommender">
     <configuration name="BruteForceTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BruteForceTester" />
       <module name="USACO" />
@@ -241,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629045683801</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fix default JDK version from 1.11 to 1.8">
+      <created>1629076546906</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1629076546906</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -351,7 +391,8 @@
     <MESSAGE value="Some CF practices" />
     <MESSAGE value="Add UVATester and crawler, along with SPOJ problems." />
     <MESSAGE value="Add PDF UVA problems." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add PDF UVA problems." />
+    <MESSAGE value="Fix default JDK version from 1.11 to 1.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix default JDK version from 1.11 to 1.8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

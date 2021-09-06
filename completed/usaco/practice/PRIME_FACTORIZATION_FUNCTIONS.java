@@ -21,8 +21,8 @@ public class Main {
         linearSieve[0] = 1;
         linearSieve[1] = 1;
         for(int i = 2; i < linearSieve.length; i++) {
-            if(linearSieve[i]==0) {
-                linearSieve[i]=i;
+            if(linearSieve[i] == 0) {
+                linearSieve[i] = i;
                 compressedPrimes.add(i);
             }
             for(int j: compressedPrimes) {

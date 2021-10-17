@@ -71,7 +71,7 @@ public class beads {
         return Math.min(numBeads, beads.length);
     }
     public static void main(String[] args) throws IOException{
-        BufferedReader f = new BufferedReader(new FileReader("beads.in"));
+        BufferedReader f = new BufferedReader(new FileReader("uva.in"));
         PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("beads.out")));
         int necklaceLength = Integer.parseInt(f.readLine());
         String necklace = f.readLine();

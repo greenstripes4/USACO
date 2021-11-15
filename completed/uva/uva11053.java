@@ -2,40 +2,28 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    private static int move(long cur, long a, long b, long MOD) {
-        return (int) (((((a*cur)%MOD)*cur)%MOD+b)%MOD);
-    }
-    public static void main(String[] args) throws IOException {
-        //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
-        BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
-        PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
-        while(true) {
-            StringTokenizer st = new StringTokenizer(f.readLine());
-            int N = Integer.parseInt(st.nextToken());
-            if(N == 0) {
-                break;
-            }
-            int a = Integer.parseInt(st.nextToken());
-            int b = Integer.parseInt(st.nextToken());
-            int slow = 0;
-            int fast = 0;
-            do {
-                slow = move(slow, a, b, N);
-                fast = move(move(fast, a, b, N), a, b, N);
-            } while(slow != fast);
-            slow = 0;
-            do {
-                slow = move(slow, a, b, N);
-                fast = move(fast, a, b, N);
-            } while(slow != fast);
-            int ans = N;
-            do {
-                slow = move(slow, a, b, N);
-                ans--;
-            } while(slow != fast);
-            out.println(ans);
+        public static void main(String[] args) throws IOException {
+                BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
+                //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
+                PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
+                //PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("meetings.out")));
+                String input;
+                while(!(input = f.readLine()).equals("0")) {
+                    StringTokenizer st = new StringTokenizer(input);
+                    int N = Integer.parseInt(st.nextToken());
+                    int a = Integer.parseInt(st.nextToken());
+                    int b = Integer.parseInt(st.nextToken());
+                    HashMap<Long, Integer> timer = new HashMap<>();
+                    long cur = 0;
+                    int time = 0;
+                    while(!timer.containsKey(cur)) {
+                        timer.put(cur, time);
+                        cur = (((a*cur)%N*cur)%N+b)%N;
+                        time++;
+                    }
+                    out.println(N-time+timer.get(cur));
+                }
+                f.close();
+                out.close();
         }
-        f.close();
-        out.close();
-    }
 }

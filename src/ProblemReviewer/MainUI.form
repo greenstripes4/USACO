@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ProblemReviewer.MainUI">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <toolbar id="e1087">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <orientation value="0"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="291c8" class="javax.swing.JButton" binding="nextProblemButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Next Problem"/>
+            </properties>
+          </component>
+          <component id="a3d34" class="javax.swing.JButton" binding="addProblemButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Add Problem"/>
+            </properties>
+          </component>
+          <component id="e81dd" class="javax.swing.JTextField" binding="textUrl">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="e337" class="javax.swing.JButton" binding="knowButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Know"/>
+            </properties>
+          </component>
+          <component id="1bcd0" class="javax.swing.JButton" binding="notKnowButton">
+            <constraints/>
+            <properties>
+              <text value="Don't Know"/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+    </children>
+  </grid>
+</form>

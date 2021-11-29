@@ -1,40 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75930b8c-5fcc-4eba-8efe-fb2f56a73e53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cftags/binary search.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/bitmasks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/brute force.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/combinatorics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/constructive algorithms.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/data structures.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/dfs and similar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/divide and conquer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/dp.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/dsu.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/expression parsing.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/flows.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/games.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/geometry.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/graph matchings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/graphs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/greedy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/hashing.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/implementation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/math.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/matrices.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/number theory.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/probabilities.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/schedules.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/shortest paths.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/sortings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/string suffix structures.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/strings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/ternary search.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/trees.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cftags/two pointers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/json-20210307.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CFRecommender.java" afterDir="false" />
+    <list default="true" id="75930b8c-5fcc-4eba-8efe-fb2f56a73e53" name="Default Changelist" comment="Kattis problems with sample test cases">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/usaco/Silver/2020-Jan-1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jackson-annotations-2.13.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jackson-core-2.13.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jackson-databind-2.13.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/review.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/AddDialog.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/AddDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/Ebbinghaus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/MainUI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/MainUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/Problem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/Reviewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/SwingFXWebView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/ride.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/usaco/training/ride.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ride.in" beforeDir="false" afterPath="$PROJECT_DIR$/loan.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainBruteforce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainBruteforce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/USCAOTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/USCAOTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -132,21 +121,26 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="318" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/completed/usaco/Silver" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\usaco\Silver" />
+      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\test\Kattis-problems-samplesdata" />
       <recent name="C:\DevApps\JavaCode\USACO\completed\CodeForces" />
       <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\CodeForces" />
       <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\POJ" />
-      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\usaco" />
-      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\usaco\practice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\test\Kattis-problems-samplesdata" />
+      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\test\Kattis" />
+      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\test" />
       <recent name="C:\Users\HomeMini\IdeaProjects\USACO\cftags" />
       <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\usaco\practice" />
     </key>
@@ -154,17 +148,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CFRecommender">
-    <configuration name="BruteForceTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BruteForceTester" />
+  <component name="RunManager" selected="Application.AddDialog">
+    <configuration name="AddDialog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProblemReviewer.AddDialog" />
       <module name="USACO" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CFRecommender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CFRecommender" />
-      <module name="USACO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProblemReviewer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,15 +169,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainBruteforce" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainBruteforce" />
+    <configuration name="MainUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProblemReviewer.MainUI" />
       <module name="USACO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProblemReviewer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainRay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainRay" />
+    <configuration name="USCAOTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="USCAOTester" />
       <module name="USACO" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,17 +191,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.BruteForceTester" />
-      <item itemvalue="Application.CFRecommender" />
-      <item itemvalue="Application.MainBruteforce" />
-      <item itemvalue="Application.MainRay" />
+      <item itemvalue="Application.USCAOTester" />
+      <item itemvalue="Application.MainUI" />
+      <item itemvalue="Application.AddDialog" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CFRecommender" />
-        <item itemvalue="Application.BruteForceTester" />
-        <item itemvalue="Application.MainBruteforce" />
-        <item itemvalue="Application.MainRay" />
+        <item itemvalue="Application.MainUI" />
+        <item itemvalue="Application.AddDialog" />
+        <item itemvalue="Application.USCAOTester" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629076546906</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Kattis problems with sample test cases">
+      <created>1630782984600</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1630782984600</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -363,6 +367,11 @@
             <State />
           </value>
         </entry>
+        <entry key="fadff69a-5cb0-4b24-9866-55a07ece0496">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
     <option name="RECENT_FILTERS">
@@ -392,7 +401,8 @@
     <MESSAGE value="Add UVATester and crawler, along with SPOJ problems." />
     <MESSAGE value="Add PDF UVA problems." />
     <MESSAGE value="Fix default JDK version from 1.11 to 1.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix default JDK version from 1.11 to 1.8" />
+    <MESSAGE value="Kattis problems with sample test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kattis problems with sample test cases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -404,6 +414,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="org.json.JSONException" package="org.json" />
           <option name="timeStamp" value="17" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="27" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/CFRecommender.java</url>

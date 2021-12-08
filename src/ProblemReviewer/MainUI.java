@@ -4,6 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class MainUI {
     private JButton nextProblemButton;
@@ -12,6 +15,7 @@ public class MainUI {
     private JButton addProblemButton;
     private JButton knowButton;
     private JButton notKnowButton;
+    private JButton browserButton;
     private Problem currentProblem;
     static SwingFXWebView webview;
     static Reviewer reviewer = new Reviewer();
@@ -54,6 +58,19 @@ public class MainUI {
                     currentProblem.strange++;
                     currentProblem.lastReview = java.util.Calendar.getInstance().getTime();
                     reviewer.saveReview();
+                }
+            }
+        });
+        browserButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                Desktop desk = Desktop.getDesktop();
+                try {
+                    desk.browse(new URI(currentProblem.URL));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (URISyntaxException e) {
+                    e.printStackTrace();
                 }
             }
         });

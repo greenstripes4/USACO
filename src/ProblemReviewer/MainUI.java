@@ -17,20 +17,31 @@ public class MainUI {
     private JButton notKnowButton;
     private JButton browserButton;
     private Problem currentProblem;
-    static SwingFXWebView webview;
+    // static SwingFXWebView webview;
     static Reviewer reviewer = new Reviewer();
 
+    public void nextProblem(){
+        currentProblem = reviewer.getRandomRecord();
+        if(currentProblem!=null){
+            textUrl.setText(currentProblem.URL);
+            // webview.loadURL(currentProblem.URL);
+            Desktop desk = Desktop.getDesktop();
+            try {
+                desk.browse(new URI(currentProblem.URL));
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (URISyntaxException e) {
+                e.printStackTrace();
+            }
+        } else {
+            textUrl.setText("No Problems");
+        }
+    }
     public MainUI() {
         nextProblemButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                currentProblem = reviewer.getRandomRecord();
-                if(currentProblem!=null){
-                    textUrl.setText(currentProblem.URL);
-                    webview.loadURL(currentProblem.URL);
-                } else {
-                    textUrl.setText("No Problems");
-                }
+                nextProblem();
             }
         });
         addProblemButton.addActionListener(new ActionListener() {
@@ -48,6 +59,7 @@ public class MainUI {
                     currentProblem.lastReview = java.util.Calendar.getInstance().getTime();
                     reviewer.saveReview();
                 }
+                nextProblem();
             }
         });
         notKnowButton.addActionListener(new ActionListener() {
@@ -59,6 +71,7 @@ public class MainUI {
                     currentProblem.lastReview = java.util.Calendar.getInstance().getTime();
                     reviewer.saveReview();
                 }
+                nextProblem();
             }
         });
         browserButton.addActionListener(new ActionListener() {
@@ -93,10 +106,11 @@ public class MainUI {
                 c.weighty = 1.0;
                 c.weightx = 1.0;
                 c.fill = GridBagConstraints.BOTH;
-                webview = new SwingFXWebView();
-                frame.getContentPane().add(webview, c);
-                frame.setMinimumSize(new Dimension(1320, 900));
+                // webview = new SwingFXWebView();
+                // frame.getContentPane().add(webview, c);
+                frame.setMinimumSize(new Dimension(800, 80));
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.setAlwaysOnTop(true);
                 frame.pack();
                 frame.setVisible(true);
             }

@@ -15,15 +15,17 @@ public class MainUI {
     private JButton addProblemButton;
     private JButton knowButton;
     private JButton notKnowButton;
-    private JButton browserButton;
+    private JButton updateButton;
     private Problem currentProblem;
     // static SwingFXWebView webview;
     static Reviewer reviewer = new Reviewer();
+    private static JFrame frame = null;
 
     public void nextProblem(){
         currentProblem = reviewer.getRandomRecord();
         if(currentProblem!=null){
             textUrl.setText(currentProblem.URL);
+            frame.setTitle(reviewer.problemsLeft + " problems left");
             // webview.loadURL(currentProblem.URL);
             Desktop desk = Desktop.getDesktop();
             try {
@@ -74,17 +76,12 @@ public class MainUI {
                 nextProblem();
             }
         });
-        browserButton.addActionListener(new ActionListener() {
+        updateButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                Desktop desk = Desktop.getDesktop();
-                try {
-                    desk.browse(new URI(currentProblem.URL));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (URISyntaxException e) {
-                    e.printStackTrace();
-                }
+                AddDialog addDialog = new AddDialog();
+                addDialog.setProblem(currentProblem);
+                addDialog.setVisible(true);
             }
         });
     }
@@ -96,7 +93,8 @@ public class MainUI {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                final JFrame frame = new JFrame("MainUI");
+                //final JFrame frame = new JFrame("MainUI");
+                frame = new JFrame("MainUI");
 
                 frame.setContentPane(new MainUI().MainPanel);
                 GridBagConstraints c = new GridBagConstraints();

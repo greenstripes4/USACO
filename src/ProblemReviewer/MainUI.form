@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ProblemReviewer.MainUI">
   <grid id="27dc6" binding="MainPanel" layout-manager="GridBagLayout">
     <constraints>
-      <xy x="20" y="20" width="535" height="400"/>
+      <xy x="20" y="20" width="583" height="43"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -31,10 +31,10 @@
               <text value="Add Problem"/>
             </properties>
           </component>
-          <component id="65ff4" class="javax.swing.JButton" binding="browserButton" default-binding="true">
+          <component id="65ff4" class="javax.swing.JButton" binding="updateButton">
             <constraints/>
             <properties>
-              <text value="Browser"/>
+              <text value="Update Problem"/>
             </properties>
           </component>
           <component id="e81dd" class="javax.swing.JTextField" binding="textUrl">

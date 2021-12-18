@@ -11,6 +11,8 @@ public class AddDialog extends JDialog {
     private JTextField textTitle;
     private JTextField textURL;
     private JTextField textTags;
+    private JTextArea textNote;
+    private Problem currentProblem = null;
 
     public AddDialog() {
         setContentPane(contentPane);
@@ -46,11 +48,30 @@ public class AddDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
+    public void setProblem(Problem updateProblem){
+        currentProblem = updateProblem;
+        textTitle.setText(currentProblem.title);
+        textURL.setText(currentProblem.getURL());
+        textTags.setText(currentProblem.tags);
+        textNote.setText(currentProblem.note);
+    }
+
     private void onOK() {
         //TODO: validator
         Reviewer reviewer = new Reviewer();
         reviewer.init();
-        reviewer.addProblem(new Problem(textTitle.getText(), textURL.getText(), textTags.getText()));
+        if(currentProblem==null) {
+            Problem newProblem = new Problem(textTitle.getText(), textURL.getText(), textTags.getText());
+            newProblem.note = textNote.getText();
+            reviewer.addProblem(newProblem);
+        } else {
+            currentProblem.title = textTitle.getText();
+            currentProblem.URL = textURL.getText();
+            currentProblem.tags = textTags.getText();
+            currentProblem.note = textNote.getText();
+            reviewer.updateProblem(currentProblem);
+            reviewer.saveReview();
+        }
         dispose();
     }
 

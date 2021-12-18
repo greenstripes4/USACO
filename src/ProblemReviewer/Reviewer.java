@@ -23,6 +23,7 @@ public class Reviewer {
     String REVIEW_FILE = "review.json";
     Random random = new Random(System.currentTimeMillis());
     Ebbinghaus ebbinghaus = new Ebbinghaus();
+    public int problemsLeft = 0;
 
     public void saveReview() {
         try{
@@ -67,7 +68,7 @@ public class Reviewer {
                 needReciteRecords.add(r);
             }
         }
-
+        problemsLeft = needReciteRecords.size();
         if (needReciteRecords.size() != 0) {
             int index = random.nextInt(needReciteRecords.size());
             return needReciteRecords.get(index);
@@ -90,6 +91,29 @@ public class Reviewer {
         problems.add(newProblem);
         saveReview();
     }
+
+    public void updateProblem(Problem oldProblem){
+        for(Problem p : problems){
+            if(p.stage == oldProblem.stage
+            && p.strange == oldProblem.stage
+            && p.lastReview.compareTo(oldProblem.lastReview)==0
+            && p.firstReview.compareTo(oldProblem.firstReview)==0) {
+                p.tags = oldProblem.tags;
+                p.title = oldProblem.title;
+                p.URL = oldProblem.URL;
+                p.note = oldProblem.note;
+                saveReview();
+                return;
+            }
+        }
+    }
+
+    public void removeProblem(Problem oldProblem){
+        problems.remove(oldProblem);
+        saveReview();
+        return;
+    }
+
     public void init() {
         loadReview();
     }

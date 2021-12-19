@@ -1,54 +1,58 @@
 import java.io.*;
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Main {
-    private static long count;
-    private static boolean isValid(int[][] cows, boolean[] used, int minX, int maxX, int minY, int maxY) {
-        for(int i = 0; i < cows.length; i++) {
-            if(cows[i][0] >= minX && cows[i][0] <= maxX && cows[i][1] >= minY && cows[i][1] <= maxY && !used[i]) {
-                return false;
-            }
-        }
-        return true;
-    }
-    private static void dfs(int[][] cows, boolean[] used, int minX, int maxX, int minY, int maxY, int index) {
-        if(index == cows.length) {
-            if(isValid(cows, used, minX, maxX, minY, maxY)) {
-                count++;
-            }
-            return;
-        }
-        dfs(cows, used, minX, maxX, minY, maxY, index+1);
-        int originalMinX = minX;
-        int originalMaxX = maxX;
-        int originalMinY = minY;
-        int originalMaxY = maxY;
-        used[index] = true;
-        minX = Math.min(minX, cows[index][0]);
-        maxX = Math.max(maxX, cows[index][0]);
-        minY = Math.min(minY, cows[index][1]);
-        maxY = Math.max(maxY, cows[index][1]);
-        dfs(cows, used, minX, maxX, minY, maxY, index+1);
-        used[index] = false;
-        minX = originalMinX;
-        maxX = originalMaxX;
-        minY = originalMinY;
-        maxY = originalMaxY;
-    }
     public static void main(String[] args) throws IOException{
-        //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
+        //BufferedReader f = new BufferedReader(new FileReader("cowjump.in"));
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
+        //PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("cowjump.out")));
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
         int N = Integer.parseInt(f.readLine());
-        int[][] cows = new int[N][2];
+        int[][] points = new int[N][2];
+        int[] x = new int[N];
+        int[] y = new int[N];
         for(int i = 0; i < N; i++) {
             StringTokenizer st = new StringTokenizer(f.readLine());
-            cows[i][0] = Integer.parseInt(st.nextToken());
-            cows[i][1] = Integer.parseInt(st.nextToken());
+            points[i][0] = Integer.parseInt(st.nextToken());
+            points[i][1] = Integer.parseInt(st.nextToken());
+            x[i] = points[i][0];
+            y[i] = points[i][1];
         }
-        count = 0;
-        dfs(cows, new boolean[N], 1000000001, -1, 1000000001, -1, 0);
-        out.println(count);
+        Arrays.sort(x);
+        Arrays.sort(y);
+        HashMap<Integer, Integer> xCompress = new HashMap<>();
+        HashMap<Integer, Integer> yCompress = new HashMap<>();
+        for(int i = 0; i < N; i++) {
+            xCompress.put(x[i], i+1);
+            yCompress.put(y[i], i+1);
+        }
+        int[][] prefSum = new int[N+1][N+1];
+        for(int[] i: points) {
+            i[0] = xCompress.get(i[0]);
+            i[1] = yCompress.get(i[1]);
+            prefSum[i[0]][i[1]]++;
+        }
+        for(int i = 1; i <= N; i++) {
+            for(int j = 1; j <= N; j++) {
+                prefSum[i][j] += prefSum[i-1][j];
+                prefSum[i][j] += prefSum[i][j-1];
+                prefSum[i][j] -= prefSum[i-1][j-1];
+            }
+        }
+        long ans = 1;
+        for(int i = 0; i < N; i++) {
+            for(int j = i; j < N; j++) {
+                int left = Math.min(points[i][0], points[j][0]);
+                int right = Math.max(points[i][0], points[j][0]);
+                int top = Math.max(points[i][1], points[j][1]);
+                int bottom = Math.min(points[i][1], points[j][1]);
+                long num1 = prefSum[right][bottom]-prefSum[left-1][bottom];
+                long num2 = prefSum[right][N]-prefSum[left-1][N]-prefSum[right][top-1]+prefSum[left-1][top-1];
+                ans += num1*num2;
+            }
+        }
+        out.println(ans);
         f.close();
         out.close();
     }

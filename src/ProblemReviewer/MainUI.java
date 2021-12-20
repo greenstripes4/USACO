@@ -110,6 +110,13 @@ public class MainUI {
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setAlwaysOnTop(true);
                 frame.pack();
+                GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+                GraphicsDevice defaultScreen = ge.getDefaultScreenDevice();
+                Rectangle rect = defaultScreen.getDefaultConfiguration().getBounds();
+                int taskbarheight = Toolkit.getDefaultToolkit().getScreenSize().height-ge.getMaximumWindowBounds().height;
+                int x = ((int) rect.getMaxX() - frame.getWidth())/2;
+                int y = (int) rect.getMaxY() - frame.getHeight() - taskbarheight;
+                frame.setLocation(x, y);
                 frame.setVisible(true);
             }
         });

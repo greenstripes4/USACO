@@ -119,10 +119,10 @@
   "title" : "Shuffle",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 1,
   "strange" : 0,
   "firstReview" : 1638164361497,
-  "lastReview" : 1638164361497,
+  "lastReview" : 1640567140861,
   "url" : "https://vjudge.net/problem/UVA-12174"
 }, {
   "title" : "Trapping Rain Water",
@@ -191,10 +191,10 @@
   "title" : "Splitting the Field",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 1,
   "strange" : 0,
   "firstReview" : 1638164520903,
-  "lastReview" : 1638164520903,
+  "lastReview" : 1640567797854,
   "url" : "http://www.usaco.org/index.php?page=viewproblem2&cpid=645"
 }, {
   "title" : "Making A Large Island",
@@ -263,10 +263,10 @@
   "title" : "Let's Dance",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 1,
   "strange" : 0,
   "firstReview" : 1638168447494,
-  "lastReview" : 1638168447494,
+  "lastReview" : 1640566638661,
   "url" : "https://vjudge.net/problem/UVA-10218"
 }, {
   "title" : "Airplane",
@@ -354,9 +354,9 @@
   "tags" : "",
   "note" : "",
   "stage" : 0,
-  "strange" : 0,
+  "strange" : 1,
   "firstReview" : 1638168814315,
-  "lastReview" : 1638168814315,
+  "lastReview" : 1640566428156,
   "url" : "https://codeforces.com/contest/472/problem/D"
 }, {
   "title" : "Reberland Linguistics",
@@ -371,10 +371,10 @@
   "title" : "Central Post Office",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 1,
   "strange" : 0,
   "firstReview" : 1638168970907,
-  "lastReview" : 1638168970907,
+  "lastReview" : 1640565683715,
   "url" : "https://vjudge.net/problem/UVA-12379"
 }, {
   "title" : "Volleyball",
@@ -651,8 +651,53 @@
   "tags" : "",
   "note" : "",
   "stage" : 0,
-  "strange" : 0,
+  "strange" : 1,
   "firstReview" : 1639879547486,
-  "lastReview" : 1639879547486,
+  "lastReview" : 1640041838209,
   "url" : "https://codeforces.com/problemset/problem/1558/B"
+}, {
+  "title" : "Let's Go Hiking",
+  "tags" : "",
+  "note" : "*write problem, consider many cases",
+  "stage" : 0,
+  "strange" : 0,
+  "firstReview" : 1640139178352,
+  "lastReview" : 1640139178352,
+  "url" : "https://codeforces.com/contest/1495/problem/B"
+}, {
+  "title" : "Playlist",
+  "tags" : "",
+  "note" : "",
+  "stage" : 0,
+  "strange" : 0,
+  "firstReview" : 1640243119664,
+  "lastReview" : 1640243119664,
+  "url" : "https://codeforces.com/problemset/problem/1482/D"
+}, {
+  "title" : "Curious Fleas",
+  "tags" : "",
+  "note" : "",
+  "stage" : 0,
+  "strange" : 0,
+  "firstReview" : 1640384502106,
+  "lastReview" : 1640384502106,
+  "url" : "https://vjudge.net/problem/UVA-11329"
+}, {
+  "title" : "Bit Compressor",
+  "tags" : "",
+  "note" : "",
+  "stage" : 0,
+  "strange" : 0,
+  "firstReview" : 1640384558037,
+  "lastReview" : 1640384558037,
+  "url" : "https://vjudge.net/problem/UVA-1052"
+}, {
+  "title" : "Unusual Minesweeper",
+  "tags" : "",
+  "note" : "",
+  "stage" : 0,
+  "strange" : 0,
+  "firstReview" : 1640471377486,
+  "lastReview" : 1640471377486,
+  "url" : "https://codeforces.com/contest/1619/problem/G"
 } ]

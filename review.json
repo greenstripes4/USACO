@@ -2,55 +2,55 @@
   "title" : "Fliptile",
   "tags" : "loop",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638163844035,
-  "lastReview" : 1639792435313,
+  "lastReview" : 1644561565430,
   "url" : "http://poj.org/problem?id=3279"
 }, {
   "title" : "Physics Experiment",
   "tags" : "adhoc",
   "note" : "",
-  "stage" : 0,
+  "stage" : 1,
   "strange" : 0,
   "firstReview" : 1638163901791,
-  "lastReview" : 1638163901792,
+  "lastReview" : 1642361234233,
   "url" : "http://poj.org/problem?id=3684"
 }, {
   "title" : "Jessica's Reading Problem",
   "tags" : "two pointers",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638163967888,
-  "lastReview" : 1638163967889,
+  "lastReview" : 1644561501277,
   "url" : "http://poj.org/problem?id=3320"
 }, {
   "title" : "Fence Repair",
   "tags" : "greedy",
   "note" : "",
-  "stage" : 0,
+  "stage" : 1,
   "strange" : 0,
   "firstReview" : 1638164034904,
-  "lastReview" : 1638164034904,
+  "lastReview" : 1640820614427,
   "url" : "http://poj.org/problem?id=3253"
 }, {
   "title" : "Best Cow Line",
   "tags" : "greedy",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638164115697,
-  "lastReview" : 1638164115697,
+  "lastReview" : 1642381334718,
   "url" : "http://poj.org/problem?id=3617"
 }, {
   "title" : "Cow Acrobats",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638164140346,
-  "lastReview" : 1638164140347,
+  "lastReview" : 1644473724825,
   "url" : "http://poj.org/problem?id=3045"
 }, {
   "title" : "Showstopper",
@@ -65,37 +65,37 @@
   "title" : "Garland",
   "tags" : "binary search",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638164209951,
-  "lastReview" : 1638164209951,
+  "lastReview" : 1643502722740,
   "url" : "http://poj.org/problem?id=1759"
 }, {
   "title" : "Selling Land",
   "tags" : "mono stack",
   "note" : "",
   "stage" : 0,
-  "strange" : 1,
+  "strange" : 3,
   "firstReview" : 1638164238468,
-  "lastReview" : 1639343445656,
+  "lastReview" : 1642381921677,
   "url" : "https://vjudge.net/problem/UVA-12265"
 }, {
   "title" : "First One",
   "tags" : "",
   "note" : "",
   "stage" : 0,
-  "strange" : 0,
+  "strange" : 2,
   "firstReview" : 1638164274105,
-  "lastReview" : 1638164274105,
+  "lastReview" : 1644473665625,
   "url" : "https://vjudge.net/problem/HDU-5358"
 }, {
   "title" : "Cav",
   "tags" : "",
   "note" : "",
   "stage" : 0,
-  "strange" : 0,
+  "strange" : 2,
   "firstReview" : 1638164300447,
-  "lastReview" : 1638164300447,
+  "lastReview" : 1644473807017,
   "url" : "https://vjudge.net/problem/UVA-1442"
 }, {
   "title" : "Zombie's Treasure Chest",
@@ -110,82 +110,82 @@
   "title" : "Face The Right Way",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638164340514,
-  "lastReview" : 1639791792571,
+  "lastReview" : 1643263726509,
   "url" : "http://poj.org/problem?id=3276"
 }, {
   "title" : "Shuffle",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638164361497,
-  "lastReview" : 1640567140861,
+  "lastReview" : 1643500260303,
   "url" : "https://vjudge.net/problem/UVA-12174"
 }, {
   "title" : "Trapping Rain Water",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638164377170,
-  "lastReview" : 1639856980100,
+  "lastReview" : 1643493097632,
   "url" : "https://leetcode.com/problems/trapping-rain-water/"
 }, {
   "title" : "A Huge Tower",
   "tags" : "",
   "note" : "",
   "stage" : 0,
-  "strange" : 0,
+  "strange" : 1,
   "firstReview" : 1638164398431,
-  "lastReview" : 1638164398431,
+  "lastReview" : 1640817319490,
   "url" : "https://oj.uz/problem/view/CEOI10_tower"
 }, {
   "title" : "Painting the Barn",
   "tags" : "",
   "note" : "",
   "stage" : 0,
-  "strange" : 0,
+  "strange" : 1,
   "firstReview" : 1638164425788,
-  "lastReview" : 1638164425788,
+  "lastReview" : 1643346897876,
   "url" : "http://www.usaco.org/index.php?page=viewproblem2&cpid=923"
 }, {
   "title" : "An impassioned circulation of affection",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
-  "strange" : 0,
+  "stage" : 0,
+  "strange" : 1,
   "firstReview" : 1638164441012,
-  "lastReview" : 1639337665710,
+  "lastReview" : 1640821114409,
   "url" : "https://codeforces.com/problemset/problem/814/C"
 }, {
   "title" : "Range Xor Queries",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638164460354,
-  "lastReview" : 1639856980026,
+  "lastReview" : 1643345311222,
   "url" : "https://cses.fi/problemset/task/1650"
 }, {
   "title" : "Subarray Sums II",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638164484674,
-  "lastReview" : 1638164484674,
+  "lastReview" : 1643501778453,
   "url" : "https://cses.fi/problemset/task/1661"
 }, {
   "title" : "Snow Boots",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638164501002,
-  "lastReview" : 1638164501002,
+  "lastReview" : 1643502496588,
   "url" : "http://www.usaco.org/index.php?page=viewproblem2&cpid=813"
 }, {
   "title" : "Splitting the Field",
@@ -200,46 +200,46 @@
   "title" : "Making A Large Island",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638164541330,
-  "lastReview" : 1639338123670,
+  "lastReview" : 1640820636682,
   "url" : "https://leetcode.com/problems/making-a-large-island/"
 }, {
   "title" : "Bricks Falling When Hit",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638164561157,
-  "lastReview" : 1639344274050,
+  "lastReview" : 1640812834660,
   "url" : "https://leetcode.com/problems/bricks-falling-when-hit/"
 }, {
   "title" : "Jury Marks",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638164579223,
-  "lastReview" : 1639791773606,
+  "lastReview" : 1643263695534,
   "url" : "https://codeforces.com/contest/831/problem/C"
 }, {
   "title" : "Roadblocks",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638164633035,
-  "lastReview" : 1638164633035,
+  "lastReview" : 1644388149087,
   "url" : "http://poj.org/problem?id=3255"
 }, {
   "title" : "Conscription",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 1,
   "firstReview" : 1638164660466,
-  "lastReview" : 1639337517951,
+  "lastReview" : 1643498154382,
   "url" : "http://poj.org/problem?id=3723"
 }, {
   "title" : "Anne's game",
@@ -263,19 +263,19 @@
   "title" : "Let's Dance",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638168447494,
-  "lastReview" : 1640566638661,
+  "lastReview" : 1643083033220,
   "url" : "https://vjudge.net/problem/UVA-10218"
 }, {
   "title" : "Airplane",
   "tags" : "",
   "note" : "",
   "stage" : 0,
-  "strange" : 0,
+  "strange" : 1,
   "firstReview" : 1638168501101,
-  "lastReview" : 1638168501101,
+  "lastReview" : 1640821200514,
   "url" : "https://vjudge.net/problem/UVA-12461"
 }, {
   "title" : "DZY Loves Physics",
@@ -290,37 +290,37 @@
   "title" : "Euclid's Game",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638168583893,
-  "lastReview" : 1639336267808,
+  "lastReview" : 1640816540878,
   "url" : "https://vjudge.net/problem/UVA-10368"
 }, {
   "title" : "Intersecting Circles",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638168618436,
-  "lastReview" : 1638168618436,
+  "lastReview" : 1644388278250,
   "url" : "https://vjudge.net/problem/UVA-453"
 }, {
   "title" : "Special Olympics",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 1,
   "firstReview" : 1638168641286,
-  "lastReview" : 1639856637490,
+  "lastReview" : 1643502517038,
   "url" : "https://codeforces.com/contest/199/problem/B"
 }, {
   "title" : "Rings and Glue",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 3,
   "strange" : 0,
   "firstReview" : 1638168674479,
-  "lastReview" : 1639342141785,
+  "lastReview" : 1643501330056,
   "url" : "https://vjudge.net/problem/UVA-10301"
 }, {
   "title" : "Queue",
@@ -335,46 +335,46 @@
   "title" : "Oranges and Apples",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638168732319,
-  "lastReview" : 1639792074892,
+  "lastReview" : 1643344863380,
   "url" : "https://codeforces.com/contest/23/problem/C"
 }, {
   "title" : "Counting Rectangles is Fun",
   "tags" : "",
   "note" : "",
   "stage" : 0,
-  "strange" : 0,
+  "strange" : 1,
   "firstReview" : 1638168785743,
-  "lastReview" : 1638168785743,
+  "lastReview" : 1643264097687,
   "url" : "https://codeforces.com/contest/372/problem/B"
 }, {
   "title" : "Design Tutorial: Inverse the Problem",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 1,
   "strange" : 1,
   "firstReview" : 1638168814315,
-  "lastReview" : 1640566428156,
+  "lastReview" : 1642381888533,
   "url" : "https://codeforces.com/contest/472/problem/D"
 }, {
   "title" : "Reberland Linguistics",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638168927744,
-  "lastReview" : 1639858939609,
+  "lastReview" : 1642380982910,
   "url" : "https://codeforces.com/contest/667/problem/C"
 }, {
   "title" : "Central Post Office",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638168970907,
-  "lastReview" : 1640565683715,
+  "lastReview" : 1642381718660,
   "url" : "https://vjudge.net/problem/UVA-12379"
 }, {
   "title" : "Volleyball",
@@ -398,37 +398,37 @@
   "title" : "Equivalent Strings",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 3,
   "strange" : 0,
   "firstReview" : 1638169065073,
-  "lastReview" : 1639338074735,
+  "lastReview" : 1644388196822,
   "url" : "https://codeforces.com/contest/560/problem/D"
 }, {
   "title" : "The Tree Root",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638169100249,
-  "lastReview" : 1638169100249,
+  "lastReview" : 1643500287566,
   "url" : "https://vjudge.net/problem/UVA-10459"
 }, {
   "title" : "Mysterious Crime",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 1,
   "strange" : 1,
   "firstReview" : 1638169142970,
-  "lastReview" : 1638169722740,
+  "lastReview" : 1642383186691,
   "url" : "https://codeforces.com/contest/1043/problem/D"
 }, {
   "title" : "Road Construction",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 3,
   "strange" : 0,
   "firstReview" : 1638169350639,
-  "lastReview" : 1639337899366,
+  "lastReview" : 1644473977729,
   "url" : "https://vjudge.net/problem/Aizu-2249"
 }, {
   "title" : "Layout",
@@ -453,9 +453,9 @@
   "tags" : "",
   "note" : "",
   "stage" : 0,
-  "strange" : 0,
+  "strange" : 1,
   "firstReview" : 1638169542538,
-  "lastReview" : 1638169542538,
+  "lastReview" : 1640821114362,
   "url" : "https://vjudge.net/problem/HDU-4614"
 }, {
   "title" : "Shurikens",
@@ -470,19 +470,19 @@
   "title" : "Memory and De-Evolution",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638169646206,
-  "lastReview" : 1639341868864,
+  "lastReview" : 1644561363880,
   "url" : "https://codeforces.com/problemset/problem/712/C"
 }, {
   "title" : "Edge Weight Assignment",
   "tags" : "",
   "note" : "",
   "stage" : 0,
-  "strange" : 0,
+  "strange" : 1,
   "firstReview" : 1638169666100,
-  "lastReview" : 1638169666100,
+  "lastReview" : 1643264851037,
   "url" : "https://codeforces.com/problemset/problem/1338/B"
 }, {
   "title" : "AND, OR and square sum",
@@ -497,154 +497,154 @@
   "title" : "Talent Show",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 3,
   "strange" : 0,
   "firstReview" : 1638169764709,
-  "lastReview" : 1639341220367,
+  "lastReview" : 1644473984091,
   "url" : "http://www.usaco.org/index.php?page=viewproblem2&cpid=839"
 }, {
   "title" : "Fine Dining",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638169784859,
-  "lastReview" : 1639798023952,
+  "lastReview" : 1643346917891,
   "url" : "http://www.usaco.org/index.php?page=viewproblem2&cpid=861"
 }, {
   "title" : "Telephone",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
-  "strange" : 0,
+  "stage" : 1,
+  "strange" : 1,
   "firstReview" : 1638169802331,
-  "lastReview" : 1638169802331,
+  "lastReview" : 1643346418607,
   "url" : "http://www.usaco.org/index.php?page=viewproblem2&cpid=1090"
 }, {
   "title" : "Parada",
   "tags" : "",
   "note" : "",
   "stage" : 0,
-  "strange" : 0,
+  "strange" : 1,
   "firstReview" : 1638169839461,
-  "lastReview" : 1638169839461,
+  "lastReview" : 1640817392590,
   "url" : "https://szkopul.edu.pl/problemset/problem/1QaUWE_ePAmitZjgAszOVD1U/site/?key=statement"
 }, {
   "title" : "Numbering Paths",
   "tags" : "",
   "note" : "",
   "stage" : 0,
-  "strange" : 0,
+  "strange" : 1,
   "firstReview" : 1638169888316,
-  "lastReview" : 1638169888316,
+  "lastReview" : 1640820533379,
   "url" : "https://vjudge.net/problem/UVA-125"
 }, {
   "title" : "Smallest Missing Genetic Value in Each Subtree",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638169918114,
-  "lastReview" : 1639796224271,
+  "lastReview" : 1642377524348,
   "url" : "https://leetcode.com/contest/weekly-contest-258/problems/smallest-missing-genetic-value-in-each-subtree/"
 }, {
   "title" : "Smallest Word",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638169943555,
-  "lastReview" : 1639799615814,
+  "lastReview" : 1644474061642,
   "url" : "https://codeforces.com/contest/1043/problem/C"
 }, {
   "title" : "How Many Answers Are Wrong",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638644188306,
-  "lastReview" : 1638644188306,
+  "lastReview" : 1642360992061,
   "url" : "https://vjudge.net/problem/HDU-3038"
 }, {
   "title" : "Find them, Catch them",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638645355738,
-  "lastReview" : 1638645355738,
+  "lastReview" : 1643500295586,
   "url" : "http://poj.org/problem?id=1703"
 }, {
   "title" : "Paintball ",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638654867850,
-  "lastReview" : 1638654867850,
+  "lastReview" : 1643501767907,
   "url" : "https://vjudge.net/problem/UVA-11853"
 }, {
   "title" : "Sculpture",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638654911836,
-  "lastReview" : 1639855208195,
+  "lastReview" : 1643499384389,
   "url" : "https://vjudge.net/problem/UVA-12171"
 }, {
   "title" : "Queue Reconstruction by Height",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638749424799,
-  "lastReview" : 1639799179983,
+  "lastReview" : 1644388196872,
   "url" : "https://leetcode.com/problems/queue-reconstruction-by-height/"
 }, {
   "title" : "Wiggle Subsequence",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638749467352,
-  "lastReview" : 1639855572831,
+  "lastReview" : 1642361005694,
   "url" : "https://leetcode.com/problems/wiggle-subsequence/"
 }, {
   "title" : "Candy",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638767384598,
-  "lastReview" : 1638767384598,
+  "lastReview" : 1643499393221,
   "url" : "https://leetcode.com/problems/candy/"
 }, {
   "title" : "Binary Tree Cameras",
   "tags" : "",
   "note" : "",
-  "stage" : 1,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1638767472518,
-  "lastReview" : 1639799161691,
+  "lastReview" : 1643346904041,
   "url" : "https://leetcode.com/problems/binary-tree-cameras/"
 }, {
   "title" : "Maze Tac Toe",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1639349143608,
-  "lastReview" : 1639349143608,
+  "lastReview" : 1643264858828,
   "url" : "http://www.usaco.org/index.php?page=viewproblem2&cpid=1134"
 }, {
   "title" : "Do You Know Your ABCs?",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1639349173144,
-  "lastReview" : 1639349173144,
+  "lastReview" : 1643346925665,
   "url" : "http://www.usaco.org/index.php?page=viewproblem2&cpid=1135"
 }, {
   "title" : "Up the Strip",
@@ -659,19 +659,19 @@
   "title" : "Let's Go Hiking",
   "tags" : "",
   "note" : "*write problem, consider many cases",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1640139178352,
-  "lastReview" : 1640139178352,
+  "lastReview" : 1643263917102,
   "url" : "https://codeforces.com/contest/1495/problem/B"
 }, {
   "title" : "Playlist",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
+  "stage" : 2,
   "strange" : 0,
   "firstReview" : 1640243119664,
-  "lastReview" : 1640243119664,
+  "lastReview" : 1644474276853,
   "url" : "https://codeforces.com/problemset/problem/1482/D"
 }, {
   "title" : "Curious Fleas",
@@ -686,10 +686,10 @@
   "title" : "Bit Compressor",
   "tags" : "",
   "note" : "",
-  "stage" : 0,
-  "strange" : 0,
+  "stage" : 1,
+  "strange" : 1,
   "firstReview" : 1640384558037,
-  "lastReview" : 1640384558037,
+  "lastReview" : 1643346443515,
   "url" : "https://vjudge.net/problem/UVA-1052"
 }, {
   "title" : "Unusual Minesweeper",
@@ -700,4 +700,139 @@
   "firstReview" : 1640471377486,
   "lastReview" : 1640471377486,
   "url" : "https://codeforces.com/contest/1619/problem/G"
+}, {
+  "title" : "Buds Re-hanging",
+  "tags" : "",
+  "note" : "",
+  "stage" : 1,
+  "strange" : 0,
+  "firstReview" : 1640639318428,
+  "lastReview" : 1644387857784,
+  "url" : "https://codeforces.com/problemset/problem/1566/E"
+}, {
+  "title" : "Bottom-Tier Reversals",
+  "tags" : "",
+  "note" : "",
+  "stage" : 0,
+  "strange" : 1,
+  "firstReview" : 1640639478975,
+  "lastReview" : 1644561494030,
+  "url" : "https://codeforces.com/problemset/problem/1558/C"
+}, {
+  "title" : "String Reversal",
+  "tags" : "",
+  "note" : "",
+  "stage" : 2,
+  "strange" : 0,
+  "firstReview" : 1640927810909,
+  "lastReview" : 1644388303993,
+  "url" : "https://codeforces.com/problemset/problem/1430/E"
+}, {
+  "title" : "Bouncing Boomerangs",
+  "tags" : "",
+  "note" : "",
+  "stage" : 0,
+  "strange" : 2,
+  "firstReview" : 1640929909038,
+  "lastReview" : 1644388257332,
+  "url" : "https://codeforces.com/problemset/problem/1428/D"
+}, {
+  "title" : "Perform Easily",
+  "tags" : "",
+  "note" : "",
+  "stage" : 1,
+  "strange" : 0,
+  "firstReview" : 1640978391465,
+  "lastReview" : 1643502233895,
+  "url" : "https://codeforces.com/problemset/problem/1413/C"
+}, {
+  "title" : "Johnny and Grandmaster",
+  "tags" : "",
+  "note" : "",
+  "stage" : 0,
+  "strange" : 0,
+  "firstReview" : 1641156255425,
+  "lastReview" : 1641156255425,
+  "url" : "https://codeforces.com/problemset/problem/1361/B"
+}, {
+  "title" : "Phoenix and Science",
+  "tags" : "",
+  "note" : "",
+  "stage" : 1,
+  "strange" : 0,
+  "firstReview" : 1641162040537,
+  "lastReview" : 1643500445588,
+  "url" : "https://codeforces.com/problemset/problem/1348/D"
+}, {
+  "title" : "The Best Vacation",
+  "tags" : "",
+  "note" : "",
+  "stage" : 1,
+  "strange" : 0,
+  "firstReview" : 1641239525231,
+  "lastReview" : 1642383039822,
+  "url" : "https://codeforces.com/problemset/problem/1358/D"
+}, {
+  "title" : "Cow and Fields",
+  "tags" : "",
+  "note" : "",
+  "stage" : 1,
+  "strange" : 0,
+  "firstReview" : 1641619309756,
+  "lastReview" : 1643346397400,
+  "url" : "https://codeforces.com/contest/1307/problem/D"
+}, {
+  "title" : "Fill the Bag",
+  "tags" : "",
+  "note" : "",
+  "stage" : 1,
+  "strange" : 0,
+  "firstReview" : 1641674710091,
+  "lastReview" : 1644561501338,
+  "url" : "https://codeforces.com/contest/1303/problem/D"
+}, {
+  "title" : "K-beautiful Strings",
+  "tags" : "",
+  "note" : "",
+  "stage" : 1,
+  "strange" : 0,
+  "firstReview" : 1642277040205,
+  "lastReview" : 1644388676250,
+  "url" : "https://codeforces.com/problemset/problem/1493/C"
+}, {
+  "title" : "Number of Simple Paths",
+  "tags" : "",
+  "note" : "",
+  "stage" : 0,
+  "strange" : 0,
+  "firstReview" : 1642375945048,
+  "lastReview" : 1642375945048,
+  "url" : "https://codeforces.com/problemset/problem/1454/E"
+}, {
+  "title" : "Directing Edges",
+  "tags" : "",
+  "note" : "",
+  "stage" : 1,
+  "strange" : 0,
+  "firstReview" : 1642882901787,
+  "lastReview" : 1644473943483,
+  "url" : "https://codeforces.com/problemset/problem/1385/E"
+}, {
+  "title" : "Choosing flowers",
+  "tags" : "",
+  "note" : "",
+  "stage" : 0,
+  "strange" : 0,
+  "firstReview" : 1642891935312,
+  "lastReview" : 1642891935312,
+  "url" : "https://codeforces.com/problemset/problem/1379/C"
+}, {
+  "title" : "Yet Another Yet Another Task",
+  "tags" : "",
+  "note" : "",
+  "stage" : 0,
+  "strange" : 0,
+  "firstReview" : 1642974031635,
+  "lastReview" : 1642974031635,
+  "url" : "https://codeforces.com/problemset/problem/1359/D"
 } ]

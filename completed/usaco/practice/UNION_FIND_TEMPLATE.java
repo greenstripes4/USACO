@@ -25,6 +25,14 @@ public class Main {
             size[rootU] += size[rootV];
         }
     }
+    private static void init(int n) {
+        parent = new int[n];
+        size = new int[n];
+        for(int i = 0; i < n; i++) {
+            parent[i] = i;
+            size[i] = 1;
+        }
+    }
     public static void main(String[] args) throws IOException{
         //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));

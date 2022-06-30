@@ -9,7 +9,7 @@ import java.util.*;
 
 public class ride {
     public static void main(String[] args) throws IOException{
-        BufferedReader f = new BufferedReader(new FileReader("ride.in"));
+        BufferedReader f = new BufferedReader(new FileReader("angry.in"));
         PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("ride.out")));
         String line;
         int product1 = 0;

@@ -22,7 +22,7 @@ public class Main{
         //Scanner f = new Scanner(System.in);
         BufferedReader f = new BufferedReader(new FileReader("swap.in"));
         //BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
-        PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("convention2.out")));
+        PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("cowland.in")));
         int N = Integer.parseInt(f.readLine());
         Cow[] cows = new Cow[N];
         for(int i = 0; i < N; i++) {

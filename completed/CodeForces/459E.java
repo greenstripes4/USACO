@@ -2,43 +2,36 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
+        //PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("milkvisits.out")));
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
         StringTokenizer st = new StringTokenizer(f.readLine());
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
-        ArrayList<int[]>[] edges = new ArrayList[100001];
+        TreeMap<Integer, ArrayList<int[]>> edges = new TreeMap<>();
         for(int i = 0; i < m; i++) {
             st = new StringTokenizer(f.readLine());
-            int u = Integer.parseInt(st.nextToken());
-            int v = Integer.parseInt(st.nextToken());
+            int u = Integer.parseInt(st.nextToken())-1;
+            int v = Integer.parseInt(st.nextToken())-1;
             int w = Integer.parseInt(st.nextToken());
-            if(edges[w] == null) {
-                edges[w] = new ArrayList<>();
-            }
-            edges[w].add(new int[]{u, v});
+            edges.putIfAbsent(w, new ArrayList<>());
+            edges.get(w).add(new int[]{u, v});
         }
-        int[] dp = new int[n+1];
-        int[] temp = new int[n+1];
-        for(ArrayList<int[]> i: edges) {
-            if(i == null) {
-                continue;
+        int[] dp = new int[n];
+        for(ArrayList<int[]> i: edges.values()) {
+            int[] temp = new int[i.size()];
+            for(int j = 0; j < i.size(); j++) {
+                temp[j] = Math.max(temp[j], dp[i.get(j)[0]]+1);
             }
-            for(int[] j: i) {
-                temp[j[1]] = 0;
-            }
-            for(int[] j: i) {
-                temp[j[1]] = Math.max(temp[j[1]], dp[j[0]]+1);
-            }
-            for(int j = 1; j <= n; j++) {
-                dp[j] = Math.max(dp[j], temp[j]);
+            for(int j = 0; j < i.size(); j++) {
+                dp[i.get(j)[1]] = Math.max(dp[i.get(j)[1]], temp[j]);
             }
         }
         int max = 0;
-        for(int i = 1; i <= n; i++) {
-            max = Math.max(max, dp[i]);
+        for(int i: dp) {
+            max = Math.max(max, i);
         }
         out.println(max);
         f.close();

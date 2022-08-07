@@ -126,13 +126,20 @@ public class Main {
         }
         return count;
     }
+    private static long gcd(long a, long b) {
+        if(a == 0) {
+            return b;
+        }
+        return gcd(b%a, a);
+    }
+    private static long lcm(long a, long b) {
+        return a*b/gcd(a, b);
+    }
     public static void main(String[] args) throws IOException{
         //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
         BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
-        linearSieve = new int[101];
-        calculateLinearSieve();
-        HashMap<Integer, Integer> pf = getPrimeFactorizationWithLinearSieve(60);
+
         f.close();
         out.close();
     }

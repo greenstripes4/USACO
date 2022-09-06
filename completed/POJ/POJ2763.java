@@ -68,7 +68,7 @@ public class Main {
     }
     private static int distance(int u, int v) {
         if(u == v) {
-             return 0;
+            return 0;
         }
         if(root[u] == root[v]) {
             return depth[u] > depth[v] ? query(idx[u])-query(idx[heavy[v]]-1) : query(idx[v])-query(idx[heavy[u]]-1);
@@ -76,50 +76,54 @@ public class Main {
         return depth[root[u]] > depth[root[v]] ? query(idx[u])-query(idx[root[u]]-1)+distance(parent[root[u]], v) : query(idx[v])-query(idx[root[v]]-1)+distance(u, parent[root[v]]);
     }
     public static void main(String[] args) throws IOException {
-        //BufferedReader f = new BufferedReader(new FileReader("uva.in"));
+        BufferedReader f = new BufferedReader(new FileReader("uva.in"));
         //PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("threesum.out")));
-        BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
+        //BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
-        StringTokenizer st = new StringTokenizer(f.readLine());
-        int n = Integer.parseInt(st.nextToken());
-        int q = Integer.parseInt(st.nextToken());
-        int s = Integer.parseInt(st.nextToken());
-        adjacencyList = new ArrayList<ArrayList<int[]>>(n+1);
-        for(int i = 0; i <= n; i++) {
-            adjacencyList.add(new ArrayList<int[]>());
-        }
-        int[][] edges = new int[n][3];
-        for(int i = 1; i < n; i++) {
-            st = new StringTokenizer(f.readLine());
-            edges[i][0] = Integer.parseInt(st.nextToken());
-            edges[i][1] = Integer.parseInt(st.nextToken());
-            edges[i][2] = Integer.parseInt(st.nextToken());
-            adjacencyList.get(edges[i][0]).add(new int[]{edges[i][1], edges[i][2]});
-            adjacencyList.get(edges[i][1]).add(new int[]{edges[i][0], edges[i][2]});
-        }
-        depth = new int[n+1];
-        size = new int[n+1];
-        parent = new int[n+1];
-        heavy = new int[n+1];
-        root = new int[n+1];
-        arr = new int[n+1];
-        idx = new int[n+1];
-        time = 1;
-        dfs1(1);
-        dfs2(1);
-        build();
-        while(q-- > 0) {
-            st = new StringTokenizer(f.readLine());
-            int type = Integer.parseInt(st.nextToken());
-            if(type == 0) {
-                int u = Integer.parseInt(st.nextToken());
-                out.println(distance(s, u));
-                s = u;
-            } else {
-                int i = Integer.parseInt(st.nextToken());
-                int w = Integer.parseInt(st.nextToken());
-                int u = depth[edges[i][0]] > depth[edges[i][1]] ? edges[i][0] : edges[i][1];
-                update(idx[u], w-arr[idx[u]]);
+        String input;
+        while((input = f.readLine()) != null) {
+            StringTokenizer st = new StringTokenizer(input);
+            int n = Integer.parseInt(st.nextToken());
+            int q = Integer.parseInt(st.nextToken());
+            int s = Integer.parseInt(st.nextToken());
+            adjacencyList = new ArrayList<ArrayList<int[]>>(n+1);
+            for(int i = 0; i <= n; i++) {
+                adjacencyList.add(new ArrayList<int[]>());
+            }
+            int[][] edges = new int[n][3];
+            for(int i = 1; i < n; i++) {
+                st = new StringTokenizer(f.readLine());
+                edges[i][0] = Integer.parseInt(st.nextToken());
+                edges[i][1] = Integer.parseInt(st.nextToken());
+                edges[i][2] = Integer.parseInt(st.nextToken());
+                adjacencyList.get(edges[i][0]).add(new int[]{edges[i][1], edges[i][2]});
+                adjacencyList.get(edges[i][1]).add(new int[]{edges[i][0], edges[i][2]});
+            }
+            depth = new int[n+1];
+            size = new int[n+1];
+            parent = new int[n+1];
+            heavy = new int[n+1];
+            root = new int[n+1];
+            arr = new int[n+1];
+            idx = new int[n+1];
+            time = 1;
+            dfs1(1);
+            dfs2(1);
+            build();
+            while(q-- > 0) {
+                st = new StringTokenizer(f.readLine());
+                int type = Integer.parseInt(st.nextToken());
+                if(type == 0) {
+                    int u = Integer.parseInt(st.nextToken());
+                    out.println(distance(s, u));
+                    s = u;
+                } else {
+                    int i = Integer.parseInt(st.nextToken());
+                    int w = Integer.parseInt(st.nextToken());
+                    int u = depth[edges[i][0]] > depth[edges[i][1]] ? edges[i][0] : edges[i][1];
+                    update(idx[u], w-arr[idx[u]]);
+                    arr[idx[u]] = w;
+                }
             }
         }
         f.close();

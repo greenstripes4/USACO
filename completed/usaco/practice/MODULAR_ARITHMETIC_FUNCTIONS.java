@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    private static long[] factorial;
     private static final int MOD = 1000000007;
+    private static long[] factorial;
     private static int add(long a, long b) { return (int) (((a+MOD)%MOD+(b+MOD)%MOD)%MOD); }
     private static int subtract(long a, long b) {
         return add(a, -b);

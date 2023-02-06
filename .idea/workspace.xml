@@ -1,28 +1,548 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75930b8c-5fcc-4eba-8efe-fb2f56a73e53" name="Default Changelist" comment="Kattis problems with sample test cases">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/completed/usaco/Silver/2020-Jan-1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-annotations-2.13.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-core-2.13.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-databind-2.13.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/AddDialog.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/AddDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/Ebbinghaus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/MainUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/MainUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/Problem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/Reviewer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProblemReviewer/SwingFXWebView.java" afterDir="false" />
+    <list default="true" id="75930b8c-5fcc-4eba-8efe-fb2f56a73e53" name="Default Changelist" comment="Started Atcoder practices.">
+      <change afterPath="$PROJECT_DIR$/completed/AtCoder/ABC146F.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/AtCoder/ABC155E.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/AtCoder/ABC161.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/AtCoder/ABC183F.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/AtCoder/ABC231F.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/AtCoder/ABC245E.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/AtCoder/ABC275F.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/AtCoder/AGC003C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/AtCoder/ARC131E.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/AtCoder/NIKKEI2019D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/CodeForces/442B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/POJ/2019.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/Templates/BIN_SEARCH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/Templates/MST_KRUSKAL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/USACO/Gold/2017-Feb-3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/USACO/Gold/2021-Jan-1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/USACO/Gold/2021-Open-2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/USACO/Gold/2023-Jan-2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/completed/USACO/Gold/2023-Jan-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/completed/usaco/training/ride.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/usaco/training/ride.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ride.in" beforeDir="false" afterPath="$PROJECT_DIR$/loan.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beads.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beads.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/binary search.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/binary search.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/bitmasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/bitmasks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/brute force.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/brute force.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/combinatorics.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/combinatorics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/constructive algorithms.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/constructive algorithms.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/data structures.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/data structures.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/dfs and similar.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/dfs and similar.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/divide and conquer.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/divide and conquer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/dp.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/dp.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/dsu.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/dsu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/expression parsing.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/expression parsing.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/flows.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/flows.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/games.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/games.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/geometry.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/geometry.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/graph matchings.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/graph matchings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/graphs.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/graphs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/greedy.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/greedy.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/hashing.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/hashing.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/implementation.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/implementation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/math.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/math.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/matrices.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/matrices.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/number theory.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/number theory.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/probabilities.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/probabilities.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/schedules.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/schedules.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/shortest paths.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/shortest paths.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/sortings.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/sortings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/string suffix structures.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/string suffix structures.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/strings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/ternary search.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/ternary search.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/trees.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/trees.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cftags/two pointers.json" beforeDir="false" afterPath="$PROJECT_DIR$/cftags/two pointers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/CodeForces/1217CDEBUG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/CodeForces/cses1398D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/Daniel'sMath/Daniel'sMathProblems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/HDU/HDU1532.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/HDU/1532.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/HDU/HDU2874.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/HDU/2874.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/HDU/HDU3486.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/HDU/3486.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/POJ/POJ1151.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/POJ/1151.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/POJ/POJ1741.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/POJ/1741.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/POJ/POJ1986.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/POJ/1986.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/POJ/POJ2114.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/POJ/2114.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/POJ/POJ2486.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/POJ/2486.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/POJ/POJ2763.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/POJ/2763.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/POJ/POJ3237.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/POJ/3237.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/POJ/POJ3342.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/POJ/3342.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/X-Camp/12-B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/Exponentiation2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesApartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesApartments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesAppleDivision.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesAppleDivision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesArrayDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesArrayDescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesArrayDivision.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesArrayDivision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesBinomialCoefficients.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesBinomialCoefficients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesBitStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesBitStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesBookShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesBookShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesBuildingRoads.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesBuildingRoads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesBuildingTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesBuildingTeams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesChessboardAndQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesChessboardAndQueens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCoinCombonationsI.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCoinCombonationsI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCoinCombonationsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCoinCombonationsII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCoinPiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCoinPiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCollectingNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCollectingNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCollectingNumbers2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCollectingNumbers2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCommonDivisors.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCommonDivisors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCompanyQueriesII.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCompanyQueriesII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesConcertTickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesConcertTickets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCountingDivisors.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCountingDivisors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCountingRooms-TLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCountingRooms-TLE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCountingRooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCountingRooms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCountingRoomsBitShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCountingRoomsBitShift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCountingTowers.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCountingTowers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCreatingStrings2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCreatingStrings2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesCreatingStringsI.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesCreatingStringsI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesDiceCombonations.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesDiceCombonations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesDigitQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesDigitQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesDistinctNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesDistinctNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesDynamicRangeMinimumQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesDynamicRangeMinimumQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesDynamicRangeSumQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesDynamicRangeSumQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesEditDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesEditDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesExponentiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesExponentiation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesExponentiation2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesExponentiation2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesFactoryMachines.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesFactoryMachines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesFerrisWheel.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesFerrisWheel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesGrayCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesGrayCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesGridPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesGridPaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesHighScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesHighScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesHotelQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesHotelQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesIncreasingArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesIncreasingArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesIncreasingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesJosephusProblem1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesJosephusProblem1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesLabyrinth-TLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesLabyrinth-TLE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesLabyrinth.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesLabyrinth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesMaximumBuildingI.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesMaximumBuildingI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesMaximumSubarraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesMaximumSubarraySum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesMaximumSubarrySumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesMaximumSubarrySumII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesMessageRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesMessageRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesMinimizingCoins.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesMinimizingCoins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesMissingCoinSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesMissingCoinSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesMissingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesMissingNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesMoneySums.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesMoneySums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesMonsters.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesMonsters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesMovieFestival.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesMovieFestival.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesMovieFestival2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesMovieFestival2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesNearestSmallerValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesNearestSmallerValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesNumberSpiral.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesNumberSpiral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesPalindromeReorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesPalindromeReorder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesPermutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesPermutations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesPlaylist-TLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesPlaylist-TLE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesPlaylist.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesPlaylist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesRangeUpdateQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesRangeUpdateQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesRangeXorQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesRangeXorQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesReadingBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesReadingBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesRectangleCutting.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesRectangleCutting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesRemovingDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesRemovingDigits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesRepititions.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesRepititions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesRestaurantCustomers.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesRestaurantCustomers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesRoomAllocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesRoomAllocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesRoundTrip.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesRoundTrip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesShortestRoutes1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesShortestRoutes1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesShortestRoutes2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesShortestRoutes2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesStaticRangeMinimum.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesStaticRangeMinimum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesStaticRangeSumQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesStaticRangeSumQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesStickLengths.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesStickLengths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesSubarrayDistinctValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesSubarrayDistinctValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesSubarrayDivisibility.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesSubarrayDivisibility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesSubarraySums2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesSubarraySums2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesSubordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesSubordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesSubtreeQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesSubtreeQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesSumOfFourValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesSumOfFourValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesSumOfThreeValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesSumOfThreeValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesSumOfTwoValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesSumOfTwoValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesTasksAndDeadlines.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesTasksAndDeadlines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesTowers.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesTowers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesTrafficLights.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesTrafficLights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesTrailingZeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesTrailingZeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesTreeDiameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesTreeDiameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesTreeDistances1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesTreeDistances1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesTwoKnights.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesTwoKnights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesTwoSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesTwoSets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/cses/csesWeirdAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/CSES/csesWeirdAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/2019_fall_problem_set.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/2019_fall_problem_set.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/ahike.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/ahike.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/algebra.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/algebra.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/codedMessage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/codedMessage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/esoteric.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/esoteric.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/fancyBorder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/fancyBorder.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/fizzBuzzBloop.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/fizzBuzzBloop.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/itoa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/itoa.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/judges_data.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/judges_data.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/logo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/logo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/markdown.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/markdown.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/missingPrices.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/missingPrices.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/mixing.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/mixing.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/noteSorting.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/noteSorting.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/p1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/p1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/p10.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/p10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/p12.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/p12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/p2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/p2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/p3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/p3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/p4.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/p4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/p5.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/p5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/p6.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/p6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/p7.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/p7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/p8.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/p8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/p9.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/p9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/spanishConjugations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/spanishConjugations.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/stitching.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/stitching.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2019-fall/unitConversion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2019-fall/unitConversion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/ScaredSkiing.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/ScaredSkiing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/TeamsCode Summer 2020 Online Contest Intermediate Problem Set.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/TeamsCode Summer 2020 Online Contest Intermediate Problem Set.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/antivirusAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/antivirusAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/censusChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/censusChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/essayExpert.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/essayExpert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/europeEscapade.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/europeEscapade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/lucrativeLootcrates.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/lucrativeLootcrates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/nanovirusNeutralizers.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/nanovirusNeutralizers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/paraglidingPioneer.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/paraglidingPioneer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/perfectPromposal.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/perfectPromposal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/quarantineQualms.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/quarantineQualms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/sleepySpider.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/sleepySpider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/trickyTravels.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/trickyTravels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/vacuumVoyager.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/vacuumVoyager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-fall/wildernessWasps.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-fall/wildernessWasps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-spring/megasmunchies.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-spring/megasmunchies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-spring/nestreorganization.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-spring/nestreorganization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-spring/treesandwreaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-spring/treesandwreaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/mihs/2020-spring/wizardingquadrilaterals.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/MIHS/2020-spring/wizardingquadrilaterals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/tcspring21/hard1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/tcspring21/med4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2015-Dec-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2015-Dec-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2015-Dec-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2015-Dec-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2015-Dec-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2015-Dec-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2016-Dec-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2016-Dec-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2016-Dec-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2016-Dec-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2016-Dec-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2016-Dec-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2016-Feb-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2016-Feb-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2016-Feb-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2016-Feb-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2016-Jan-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2016-Jan-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2016-Jan-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2016-Jan-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2016-Open-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2016-Open-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2017-Dec-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2017-Dec-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2017-Dec-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2017-Dec-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2017-Feb-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2017-Feb-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2017-Feb-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2017-Feb-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2017-Jan-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2017-Jan-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2017-Jan-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2017-Jan-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2017-Jan-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2017-Jan-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2017-Open-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2017-Open-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2017-Open-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2017-Open-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2018-Dec-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2018-Dec-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2018-Dec-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2018-Dec-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2018-Dec-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2018-Dec-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2018-Feb-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2018-Feb-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2018-Feb-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2018-Feb-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2018-Feb-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2018-Feb-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2018-Jan-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2018-Jan-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2018-Jan-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2018-Jan-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2018-Open-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2018-Open-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2018-Open-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2018-Open-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2018-Open-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2018-Open-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2019-Dec-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2019-Dec-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2019-Dec-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2019-Dec-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2019-Feb-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2019-Feb-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2019-Feb-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2019-Feb-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2019-Feb-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2019-Feb-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2019-Jan-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2019-Jan-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2019-Jan-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2019-Jan-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2019-Jan-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2019-Jan-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2019-Open-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2019-Open-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2020-Dec-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2020-Dec-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2020-December-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2020-Dec-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2020-December-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2020-Dec-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2020-Feb-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2020-Feb-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2020-Jan-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2020-Jan-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2020-Jan-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2020-Jan-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2020-Jan-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2020-Jan-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2020-Open-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2020-Open-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2020-Open-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2020-Open-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2021-Dec-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2021-Dec-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2021-Feb-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2021-Feb-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2021-Jan-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2021-Jan-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2021-Open-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2021-Open-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2022-Dec-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2022-Dec-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2022-Dec-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2022-Dec-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2022-Feb-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2022-Feb-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2022-Feb-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2022-Feb-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2022-Jan-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2022-Jan-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2022-Jan-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2022-Jan-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2022-Open-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2022-Open-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/2022-Open-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Gold/2022-Open-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Gold/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2015-Dec-bcount.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2015-Dec-bcount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2015-Dec-highcard.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2015-Dec-highcard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2015-Dec-lightson.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2015-Dec-lightson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Dec-citystate.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Dec-citystate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Dec-haybales.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Dec-haybales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Dec-moocast.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Dec-moocast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Feb-balancing-TLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Feb-balancing-TLE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Feb-balancing.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Feb-balancing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Feb-cbarn.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Feb-cbarn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Feb-pails.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Feb-pails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Jan-angry.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Jan-angry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Jan-div7.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Jan-div7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Jan-gates-wrong.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Jan-gates-wrong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Open-closing.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Open-closing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Open-diamond.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Open-diamond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Open-reduce-SOL.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Open-reduce-SOL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2016-Open-reduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2016-Open-reduce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Dec-homework.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Dec-homework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Dec-measurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Dec-measurement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Dec-shuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Dec-shuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Feb-countcross.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Feb-countcross.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Feb-helpcross.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Feb-helpcross.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Feb-maxcross-nonRangeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Feb-maxcross-nonRangeSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Feb-maxcross.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Feb-maxcross.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Jan-cowcode-TLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Jan-cowcode-TLE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Jan-cowcode.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Jan-cowcode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Jan-cowdance.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Jan-cowdance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Jan-hps.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Jan-hps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Open-cownomics.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Open-cownomics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Open-pairup.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Open-pairup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2017-Open-where.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2017-Open-where.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2018-Dec-convention.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2018-Dec-convention.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2018-Dec-convention2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2018-Dec-convention2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2018-Dec-mooyomooyo.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2018-Dec-mooyomooyo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2018-Feb-reststops.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2018-Feb-reststops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2018-Feb-snowboots.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2018-Feb-snowboots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2018-Jan-lifeguards.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2018-Jan-lifeguards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2018-Jan-mootube.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2018-Jan-mootube.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2018-Jan-rentals.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2018-Jan-rentals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2018-Open-lemonade.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2018-Open-lemonade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2018-Open-multimoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2018-Open-multimoo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2018-Open-sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2018-Open-sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2019-Dec-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2019-Dec-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2019-Dec-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2019-Dec-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2019-Feb-herding.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2019-Feb-herding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2019-Feb-paintbarn.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2019-Feb-paintbarn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2019-Feb-revegetate.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2019-Feb-revegetate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2019-Jan-mountains.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2019-Jan-mountains.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2019-Jan-perimeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2019-Jan-perimeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2019-Jan-planting.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2019-Jan-planting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2019-Open-fenceplan.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2019-Open-fenceplan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2019-Open-leftout.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2019-Open-leftout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Dec-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Dec-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Dec-2-BT.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Dec-2-BT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Dec-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Dec-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Dec-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Dec-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Dec-meetings.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Dec-meetings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Dec-meetingsSOL.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Dec-meetingsSOL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Dec-milkvisits.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Dec-milkvisits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Dec-moobuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Dec-moobuzz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Feb-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Feb-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Feb-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Feb-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Feb-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Feb-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Feb-swap-TLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Feb-swap-TLE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Feb-swap.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Feb-swap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Feb-triangles-TLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Feb-triangles-TLE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Feb-triangles.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Feb-triangles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Jan-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Jan-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Jan-berries.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Jan-berries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Jan-loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Jan-loan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Jan-wormsort.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Jan-wormsort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Mar-cereal.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Mar-cereal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Mar-socdist.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Mar-socdist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Open-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Open-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Open-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Open-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Open-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Open-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Open-cereal.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Open-cereal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Open-moop.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Open-moop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2020-Open-socdist.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2020-Open-socdist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2021-Dec-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2021-Dec-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2021-Feb-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2021-Feb-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2021-Feb-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2021-Feb-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2021-Feb-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2021-Feb-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2021-Jan-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2021-Jan-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2021-Jan-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2021-Jan-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2021-Jan-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2021-Jan-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2021-Open-1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2021-Open-1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2021-Open-2.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2021-Open-2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/2021-Open-3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/2021-Open-3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/Silver/ComfortableCows.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Silver/ComfortableCows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2006-Jan-graze1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2006-Jan-graze1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2011-Dec-escape-TLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2011-Dec-escape-bin.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2011-Dec-escape-bin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2011-Dec-escape-rec.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2011-Dec-escape-rec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2011-Dec-haybales.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2011-Dec-haybales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2011-Dec-photo-TLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2011-Dec-photo.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2011-Dec-photo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2011-Nov-ctiming.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2011-Nov-ctiming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2011-Nov-digits.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2011-Nov-digits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2011-Nov-moosick.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2011-Nov-moosick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2011-Nov-pageant.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2011-Nov-pageant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2012-Dec-greetings.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2012-Dec-greetings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2012-Feb-folding.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2012-Feb-folding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2012-Feb-moo.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2012-Feb-moo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2012-Feb-planting.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2012-Feb-planting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2012-Jan-gifts-TLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2012-Jan-gifts.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2012-Jan-gifts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2012-Jan-stacking.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2012-Jan-stacking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2012-Mar-times17-BigInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2012-Mar-times17-BigInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2012-Mar-times17.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2012-Mar-times17.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2012-Nov-cowfind.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2012-Nov-cowfind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2012-Nov-hshoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2012-Nov-hshoe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2012-Open-cowrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2012-Open-cowrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2013-Dec-baseball.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2013-Dec-baseball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2013-Dec-records.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2013-Dec-records.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2014-Dec-cowjog.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2014-Dec-cowjog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2014-Dec-crosswords.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2014-Dec-crosswords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2014-Dec-learning.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2014-Dec-learning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2014-Dec-marathon.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2014-Dec-marathon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2014-Dec-marathonTLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2014-Dec-marathonTLE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2015-Dec-badmilk.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2015-Dec-badmilk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2015-Dec-paint.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2015-Dec-paint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2015-Dec-speeding.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2015-Dec-speeding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2016-Dec-blocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2016-Dec-blocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2016-Dec-cowsignal.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2016-Dec-cowsignal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2016-Dec-square.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2016-Dec-square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2016-Feb-balance-TLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2016-Feb-balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2016-Feb-balance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2016-Feb-cbarn.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2016-Feb-cbarn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2016-Feb-pails.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2016-Feb-pails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2016-Jan-angry.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2016-Jan-angry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2016-Jan-mowing.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2016-Jan-mowing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2016-Jan-promote.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2016-Jan-promote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2016-Open-bcs.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2016-Open-bcs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2016-Open-diamond.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2016-Open-diamond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2016-Open-reduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2016-Open-reduce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2017-Dec-billboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2017-Dec-billboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2017-Dec-measurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2017-Dec-measurement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2017-Dec-shuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2017-Dec-shuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2017-Feb-circlecross.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2017-Feb-circlecross.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2017-Feb-cowqueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2017-Feb-cowqueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2017-Feb-crossroad.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2017-Feb-crossroad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2017-Jan-cowtip.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2017-Jan-cowtip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2017-Jan-hps.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2017-Jan-hps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2017-Jan-notlast.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2017-Jan-notlast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2017-Open-art.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2017-Open-art.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2017-Open-cownomics.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2017-Open-cownomics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2017-Open-lostcow.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2017-Open-lostcow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2018-Dec-backforth.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2018-Dec-backforth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2018-Dec-blist.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2018-Dec-blist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2018-Dec-mixmilk.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2018-Dec-mixmilk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2018-Feb-hoofball.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2018-Feb-hoofball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2018-Feb-taming.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2018-Feb-taming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2018-Feb-teleport.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2018-Feb-teleport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2018-Jan-billboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2018-Jan-billboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2018-Jan-lifeguards.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2018-Jan-lifeguards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2018-Jan-outofplace.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2018-Jan-outofplace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2018-Open-family.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2018-Open-family.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2018-Open-milkorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2018-Open-milkorder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2018-Open-tttt.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2018-Open-tttt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2019-Dec-gymnastics.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2019-Dec-gymnastics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2019-Dec-lineup.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2019-Dec-lineup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2019-Dec-whereami.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2019-Dec-whereami.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2019-Feb-herding.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2019-Feb-herding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2019-Feb-revegetate.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2019-Feb-revegetate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2019-Feb-traffic.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2019-Feb-traffic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2019-Jan-guess.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2019-Jan-guess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2019-Jan-shell.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2019-Jan-shell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2019-Jan-sleepy.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2019-Jan-sleepy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2019-Open-buckets.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2019-Open-buckets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2019-Open-evolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Bronze/2019-Open-evolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/bronze/2019-Open-factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/bronze/2019-Open-factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/BINARY_INDEXED_TREE_TEMPLATE.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/BIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/BINARY_SEARCH_FUNCTIONS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/BITMASK_SHORTCUTS.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/BITMASK_ENUM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/BRIDGES_ARTICULATION_POINTS_TARJAN.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/BRIDGES_ARTICULATION_POINTS_TARJAN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/Back-Tracking/NQueens.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/Back-Tracking/findPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/Back-Tracking/sudoku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/CENTROID_DECOMPOSITION.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/CENTROID_DECOMP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/CLOSEST_PAIR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/CYCLE_FIND.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/CYCLE_FIND.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/DIGIT_DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/DIGIT_DP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/HEAVY_LIGHT_DECOMPOSITION.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/HLD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/KUHN.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/HUNGARIAN_KUHN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/LCA_TARJAN.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/LCA_TARJAN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/MAX_FLOW_EK.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/MAX_FLOW_EK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/MAX_FLOW_PUSH-RELABEL.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/MAX_FLOW_PUSH_RELABEL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/MAX_MATCH_WEIGHTED_BIGRAPH.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/MODULAR_ARITHMETIC_FUNCTIONS.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/MOD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/MST_PRIM.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/MST_PRIM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/PRIME_FACTORIZATION_FUNCTIONS.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/PRIME_FACTORIZATION.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/RECTANGLE_UNION.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/SCC_TARJAN.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/SCC_TARJAN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/SEGMENT_TREE_TEMPLATE(MAXIMUM).java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/SEG_TREE_MAX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/SEGMENT_TREE_TEMPLATE(MINIMUM).java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/SEG_TREE_MIN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/SEGMENT_TREE_TEMPLATE(RANGE SUM).java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/SEG_TREE_RANGE_SUM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/SHORTEST_PATH_ALGORITHMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/SHORTEST_PATH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/SPARSE_TABLE_MAXIMUM.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/SPARSE_TABLE_MAX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/SPARSE_TABLE_MINIMUM.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/SPARSE_TABLE_MIN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/practice/UNION_FIND_TEMPLATE.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/Templates/DSU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/ariprog-TLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/ariprog.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/ariprog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/barn1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/barn1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/beads.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/beads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/castle.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/castle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/combo.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/combo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/crypt1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/crypt1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/dualpal.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/dualpal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/frac1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/frac1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/friday.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/friday.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/gift1.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/gift1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/hamming.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/hamming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/holstein.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/holstein.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/milk.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/milk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/milk2..java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/milk2..java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/milk3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/milk3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/namenum.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/namenum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/namenum_rec.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/namenum_rec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/numtri.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/numtri.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/palsquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/palsquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/pprime.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/pprime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/preface.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/preface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/ride.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/ride.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/runround.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/runround.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/skidesign.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/skidesign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/sort3.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/sort3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/sprime.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/sprime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/transform.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/training/transform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/usaco/training/wormhole.java" beforeDir="false" afterPath="$PROJECT_DIR$/completed/USACO/Training/wormhole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/uva/uva10044-TLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/uva/uva10150-TLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/uva/uva10327-RE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/uva/uva10364-RE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/uva/uva10364-TLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/uva/uva10364HZ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/uva/uva10776-TLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/uva/uva11503-TLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/uva/uva11876-WA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/uva/uva12192-TLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/uva/uva1596-MLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/uva/uva347-TLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/uva/uva762-DFS-TLE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friday.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friday.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gift1.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gift1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/milk2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/milk2.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ride.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ride.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BruteForceTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BruteForceTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CFRecommender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CFRecommender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainBruteforce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainBruteforce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProblemReviewer/Ebbinghaus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProblemReviewer/Ebbinghaus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProblemReviewer/SwingFXWebView.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/USCAOTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/USCAOTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UVATester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UVATester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moobuzz.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +555,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -122,25 +641,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="318" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/completed/usaco/Silver" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/completed/AtCoder" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\usaco\Silver" />
-      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\test\Kattis-problems-samplesdata" />
-      <recent name="C:\DevApps\JavaCode\USACO\completed\CodeForces" />
-      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\CodeForces" />
-      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\POJ" />
+      <recent name="C:\DevApps\JavaCode\CP\completed\AtCoder" />
+      <recent name="C:\DevApps\JavaCode\CP\completed\USACO\Gold" />
+      <recent name="C:\DevApps\JavaCode\USACO\completed\usaco\practice" />
+      <recent name="C:\DevApps\JavaCode\USACO\completed\AtCoder" />
+      <recent name="C:\DevApps\JavaCode\USACO\completed\usaco\Gold" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\test\Kattis-problems-samplesdata" />
-      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\test\Kattis" />
-      <recent name="C:\Users\HomeMini\IdeaProjects\USACO\test" />
+      <recent name="C:\DevApps\JavaCode\USACO\completed\TEMPLATES" />
+      <recent name="C:\DevApps\JavaCode\USACO\completed\usaco\practice" />
       <recent name="C:\Users\HomeMini\IdeaProjects\USACO\cftags" />
       <recent name="C:\Users\HomeMini\IdeaProjects\USACO\completed\usaco\practice" />
     </key>
@@ -148,30 +665,38 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AddDialog">
-    <configuration name="AddDialog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProblemReviewer.AddDialog" />
-      <module name="USACO" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProblemReviewer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="BruteForceTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BruteForceTester" />
+      <module name="CP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CFRecommender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CFRecommender" />
+      <module name="CP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="USACO" />
+      <module name="CP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainBruteforce" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainBruteforce" />
+      <module name="CP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MainUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ProblemReviewer.MainUI" />
-      <module name="USACO" />
+      <module name="CP" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ProblemReviewer.*" />
@@ -182,24 +707,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="USCAOTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="USCAOTester" />
-      <module name="USACO" />
+    <configuration name="UVATester" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UVATester" />
+      <module name="CP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.USCAOTester" />
+      <item itemvalue="Application.UVATester" />
+      <item itemvalue="Application.BruteForceTester" />
+      <item itemvalue="Application.CFRecommender" />
+      <item itemvalue="Application.MainBruteforce" />
       <item itemvalue="Application.MainUI" />
-      <item itemvalue="Application.AddDialog" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BruteForceTester" />
+        <item itemvalue="Application.MainBruteforce" />
+        <item itemvalue="Application.CFRecommender" />
         <item itemvalue="Application.MainUI" />
-        <item itemvalue="Application.AddDialog" />
-        <item itemvalue="Application.USCAOTester" />
       </list>
     </recent_temporary>
   </component>
@@ -278,14 +806,119 @@
       <option name="project" value="LOCAL" />
       <updated>1629076546906</updated>
     </task>
-    <task id="LOCAL-00010" summary="Kattis problems with sample test cases">
-      <created>1630782984600</created>
+    <task id="LOCAL-00010" summary="Add CF problems' tag cache and CFRecommender">
+      <created>1629077060869</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1630782984600</updated>
+      <updated>1629077060869</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fix a template bug and add several CF practices.">
+      <created>1629077423296</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1629077423296</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix a template bug.">
+      <created>1629077453691</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1629077453691</updated>
+    </task>
+    <task id="LOCAL-00013" summary="More practices.">
+      <created>1629941277672</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1629941277672</updated>
+    </task>
+    <task id="LOCAL-00014" summary=" Started CP4 Kattis Star problems.">
+      <created>1630899910014</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1630899910014</updated>
+    </task>
+    <task id="LOCAL-00015" summary="more CF and Kattis practices">
+      <created>1631995155610</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1631995155610</updated>
+    </task>
+    <task id="LOCAL-00016" summary="More practices.">
+      <created>1634454006932</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1634454006932</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Some practices.">
+      <created>1636958267036</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1636958267036</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Updated CF tags by 12/18/2021.&#10;Updated review.json.&#10;Add some practices.">
+      <created>1639883684215</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1639883684215</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Some practices.">
+      <created>1640640062098</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1640640062098</updated>
+    </task>
+    <task id="LOCAL-00020" summary="More practices.">
+      <created>1644731998313</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1644731998313</updated>
+    </task>
+    <task id="LOCAL-00021" summary="More practices">
+      <created>1656553531360</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1656553531360</updated>
+    </task>
+    <task id="LOCAL-00022" summary="More practices.">
+      <created>1659914938072</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1659914938072</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Some template practices">
+      <created>1660968768583</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1660968768583</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add some templates, some USACO gold practices, and some other practices.">
+      <created>1662440401235</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1662440401235</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Started Atcoder practices.">
+      <created>1672373391301</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1672373391301</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -367,11 +1000,6 @@
             <State />
           </value>
         </entry>
-        <entry key="fadff69a-5cb0-4b24-9866-55a07ece0496">
-          <value>
-            <State />
-          </value>
-        </entry>
       </map>
     </option>
     <option name="RECENT_FILTERS">
@@ -401,23 +1029,30 @@
     <MESSAGE value="Add UVATester and crawler, along with SPOJ problems." />
     <MESSAGE value="Add PDF UVA problems." />
     <MESSAGE value="Fix default JDK version from 1.11 to 1.8" />
-    <MESSAGE value="Kattis problems with sample test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kattis problems with sample test cases" />
+    <MESSAGE value="Add CF problems' tag cache and CFRecommender" />
+    <MESSAGE value="Fix a template bug and add several CF practices." />
+    <MESSAGE value="Fix a template bug." />
+    <MESSAGE value=" Started CP4 Kattis Star problems." />
+    <MESSAGE value="more CF and Kattis practices" />
+    <MESSAGE value="Updated CF tags by 12/18/2021.&#10;Updated review.json.&#10;Add some practices." />
+    <MESSAGE value="Some practices." />
+    <MESSAGE value="More practices" />
+    <MESSAGE value="More practices." />
+    <MESSAGE value="Some template practices" />
+    <MESSAGE value="Add some templates, some USACO gold practices, and some other practices." />
+    <MESSAGE value="Started Atcoder practices." />
+    <option name="LAST_COMMIT_MESSAGE" value="Started Atcoder practices." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
           <properties class="org.json.JSONException" package="org.json" />
           <option name="timeStamp" value="17" />
         </breakpoint>
         <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="27" />
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="31" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/CFRecommender.java</url>
@@ -433,12 +1068,13 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="score[0]" />
-        <watch expression="visited[1][1]" language="JAVA" />
-        <watch expression="visited[999][999]" language="JAVA" />
-        <watch expression="visited[2][2]" language="JAVA" />
+        <watch expression="Integer.toBinaryString(temp)" language="JAVA" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/USACO$Main.ic" NAME="Main Coverage Results" MODIFIED="1628139480673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -21,7 +21,7 @@ public class UVATester {
         // Store current System.out before assigning a new value
         PrintStream console = System.out;
 
-        final String problem = "UVa100";
+        final String problem = "UVa551";
         File targetInput = new File("uva.in");
         File targetOutput = new File("main.out");
         File dir = new File("test\\" + problem);
@@ -84,12 +84,6 @@ public class UVATester {
 
             reader1.close();
             reader2.close();
-            if (targetInput.exists()) {
-                targetInput.delete();
-            }
-            if (targetOutput.exists()) {
-                targetOutput.delete();
-            }
             long ms = ((end - start) / 1000000);
             if (areEqual) {
                 //for most contests, 2 seconds per input case for C, C++, and Pascal,

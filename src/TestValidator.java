@@ -68,16 +68,6 @@ public class TestValidator {
 
     // Sample validator for https://codeforces.com/contest/1551/problem/B2
     public static boolean validate(File result) throws IOException {
-        BufferedReader reader1 = new BufferedReader(new FileReader(result));
-        String line1 = reader1.readLine();
-        Set<Integer> excl = new HashSet<>();
-        excl.add(0);
-        while (line1 != null){
-            Integer[] one = readIntArray(line1);
-            if(!isEvenDistributed(one, excl, 0)) return false;
-            line1 = reader1.readLine();
-        }
-        reader1.close();
         return true;
     }
 }

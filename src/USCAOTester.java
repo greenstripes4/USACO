@@ -14,7 +14,7 @@ public class USCAOTester {
     }
     public static void main(String[] args) throws IOException {
         initRuntime();
-        final String problem = "countcross";
+        final String problem = "berries_silver_jan20";
         File targetInput = new File(problem + ".in");
         File targetOutput = new File(problem + ".out");
         String[] tests = {"ray-test\\", "test\\"};

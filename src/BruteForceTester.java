@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -11,6 +12,8 @@ import java.util.List;
 import java.util.Random;
 
 public class BruteForceTester {
+    static boolean isJava = true;
+
     public static boolean isMacOs(){
         String osName = System.getProperty("os.name").toLowerCase();
         return osName.startsWith("mac os x");
@@ -49,7 +52,23 @@ public class BruteForceTester {
             long msMain = ((end - start) / 1000000);
             System.setOut(obf);
             start = System.nanoTime();
-            MainBruteforce.main(null);
+            if(isJava){
+                MainBruteforce.main(null);
+            } else {
+                String filePath = "test.exe";
+                try {
+                    Process p = Runtime.getRuntime().exec(filePath);
+                    BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()) );
+                    String line;
+                    while ((line = in.readLine()) != null) {
+                        System.out.println(line);
+                    }
+                    in.close();
+                    p.waitFor();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
             end = System.nanoTime();
             long msBF = ((end - start) / 1000000);
             System.setOut(console);
@@ -119,7 +138,7 @@ public class BruteForceTester {
         }
     }
     public static void main(String[] args) throws Exception {
-        ABTest(1000);
-        //ValidtorTest(1000);
+        //ABTest(1000);
+        ValidtorTest(1000);
     }
 }

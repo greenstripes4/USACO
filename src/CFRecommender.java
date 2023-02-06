@@ -323,7 +323,7 @@ public class CFRecommender {
 
     public static void main(String[] args) throws IOException, InterruptedException {
         init();
-        //refreshLocalCFProblems();
+        refreshLocalCFProblems();
         refreshUser();
         printUserStatus();
         System.out.println("Recommend practices based on WA numbers:");

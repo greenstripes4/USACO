@@ -1,7 +1,10 @@
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.util.Arrays;
 import java.util.Random;
+import java.util.HashSet;
 
 public class TestGenerator {
     static Random random = new Random();
@@ -14,8 +17,15 @@ public class TestGenerator {
     // Generate a "size" array with val [min, max]
     public static int[] getRandomIntArrayInRange(int min, int max, int size) {
         int[] result = new int[size];
+        //HashSet<Integer> set = new HashSet<>();
         for(int i=0;i<size;i++){
             result[i] = getRandomIntInRange(min, max);
+            /*
+            while(set.contains(result[i])) {
+                result[i] = getRandomIntInRange(min, max);
+            }
+            set.add(result[i]);
+             */
         }
         return result;
     }
@@ -171,20 +181,8 @@ public class TestGenerator {
     // Sample test generator for https://codeforces.com/contest/1551/problem/B2
     public static void generate() throws IOException {
         PrintWriter printWriter = new PrintWriter(new FileWriter("uva.in"));
-        printWriter.println("1000 1000 2");
-        for(int i=0;i<1000;i++) {
-            //printWriter.println(getRandomString(10, UPPER));
-            //outputArray(printWriter, getRandomIntArrayInRange(1, 10, 10));
-            //outputArray(printWriter, getPermutation(7));
-            //outputArray(printWriter, getRandomInterval(1,10));
-            //output2DArray(printWriter, shuffle(getUnweightTree(10)));
-            //output2DArray(printWriter, shuffle(getWeightTree(10, 100)));
-            //output2DArray(printWriter, shuffle(getUnweightGraph(10,20)));
-            //output2DArray(printWriter, shuffle(getWeightGraph(10,20, 10)));
-            printWriter.println(getRandomString(1000, new char[] {'.', '#'}));
-        }
-        printWriter.println("2 2 3 3");
-        printWriter.println("3 3 4 4");
+        printWriter.println("1 8");
+        printWriter.println(Integer.toBinaryString(getRandomIntInRange(0, (1 << 9)-1)) + " " + Integer.toBinaryString(getRandomIntInRange(0, (1 << 9)-1)));
         printWriter.close();
     }
 }

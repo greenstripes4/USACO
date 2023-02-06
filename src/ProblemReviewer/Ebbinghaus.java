@@ -14,7 +14,7 @@ public class Ebbinghaus {
     };
     */
     private int forgettingCurve[] = {
-            4 * 24 * 60,    // 4天
+    //        4 * 24 * 60,    // 4天
             7 * 24 * 60,    // 7天
             15 * 24 * 60,    // 15天
             30 * 24 * 60,    // 30天
